@@ -1,8 +1,7 @@
 ---
-layout: post
+layout: page
 title:  "AaBb"
-date:   2015-09-28 13:24:13
-categories: jruby_art update
+permalink:   /classes/aabb/
 ---
 
 AaBb is a 2D axis aligned bounding box for JRubyArt

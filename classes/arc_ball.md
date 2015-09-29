@@ -1,8 +1,7 @@
 ---
-layout: post
+layout: page
 title:  "ArcBall"
-date:   2015-09-28 13:24:13
-categories: jruby_art update
+permalink: /classes/arcball/
 ---
 
 ArcBall is a user input interface to make a 3D object rotate in an intuitive way. It uses quaternions to represent orientations, although this implementation detail is hidden in JRubyArt. Use the ArcBall to enable mouse drag rotation and mouse wheel zoom in 3D sketches. Hold down x, y or z keys to constrain the rotation axis.

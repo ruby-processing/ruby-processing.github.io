@@ -1,8 +1,7 @@
 ---
-layout: post
+layout: page
 title:  "Deglut"
-date:   2015-09-28 16:26:13
-categories: jruby_art update
+permalink: /classes/deglut/
 ---
 
 Deglut is a fast math module that does sin and cos for integer degrees
