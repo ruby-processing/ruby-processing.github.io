@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Getting Started"
-date:   2015-09-26 06:24:13
+date:   2015-10-01 06:24:13
 categories: jruby_art update
 ---
 ### Install
 
-Install [processing-3.0][processing] if you are on windows prefer to install in say `C:/Java/Processing` ie folders without special characters or spaces. You need to let JRubyArt where you've installed processing in config.yml. 
+Install [processing-3.0][processing] if you are on Windows, prefer to install in say `C:/Java/Processing` ie folders without special characters or spaces. You need to let JRubyArt know where you've installed processing using config.yml see Configuration. 
 
 Install processings [video library][video] and [audio library][audio] from the processing-3.0 ide (separate install since processing-3.0).
 
@@ -22,7 +22,7 @@ k9 setup unpack_samples # downloads and unpacks samples requires wget
 
 ### Configuration
 
-Config file is `config.yml` in the `~/.jruby_art folder` so can co-exist with a ruby-processing install
+Config file is `config.yml` in the `~/.jruby_art folder` so can co-exist with a ruby-processing install (~/.rp5rc)
 
 {% highlight yaml %}
 # Example YAML configuration file for jruby_art on linux
@@ -44,6 +44,40 @@ sketchbook_path: # user defined needed to pick up libraries
 PROCESSING_ROOT: "C:/Java/Processing" # just a suggestion
 sketchbook: "C:/Users/USER/Documents/Processing" # adjust to suit your install
 # JRUBY: false # uncomment to use jruby-complete by default especially if you haven't installed jruby
+{% endhighlight %}
+
+### Running examples
+
+{% highlight bash %}
+cd ~/k9_samples/contributed # for example
+rake # autoruns files in contributed folder
+k9 run jwishy.rb # run the JWishy sketch, using an installed jruby
+cd ~/k9_samples/processing_app/topics/shaders
+rake # autoruns shader sketches
+k9 --nojruby run monjori.rb # run the Monjori sketch with jruby-complete
+{% endhighlight %}
+
+### Create your own sketches
+
+{% highlight bash %}
+k9 create fred 200 200 # creates a bare sketch fred.rb (see below)
+vim fred.rb # other editors are available
+:!k9 run % # from vim runs the sketch 
+{% endhighlight %}
+
+{% highlight ruby %}
+def setup
+  sketch_title 'Fred'
+end
+
+def draw
+
+end
+
+def settings
+  size 200, 200, FX2D
+  # smooth # here
+end
 {% endhighlight %}
 
 [processing]:https://www.processing.org/tutorials/gettingstarted/
