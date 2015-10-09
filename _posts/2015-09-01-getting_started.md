@@ -46,6 +46,8 @@ sketchbook: "C:/Users/USER/Documents/Processing" # adjust to suit your install
 # JRUBY: false # uncomment to use jruby-complete by default especially if you haven't installed jruby
 {% endhighlight %}
 
+You could even try our [RubyArt configuration sketch][config] in the processing ide.
+
 ### Running examples
 
 {% highlight bash %}
@@ -84,3 +86,4 @@ end
 [video]:https://www.processing.org/reference/libraries/video/
 [audio]:https://processing.org/reference/libraries/sound/
 [jdk]:http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+[config]:https://github.com/ruby-processing/Example-Sketches/blob/master/samples/JRubyArt/JRubyArt.pde
