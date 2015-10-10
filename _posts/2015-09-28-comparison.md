@@ -17,5 +17,9 @@ categories: jruby_art update
 |DegLut     |library            |built-in       |
 |FX2D       |No                 |Yes            |
 |App Export |Yes                |No             |
-|Live mode  |Yes                |Yes             |
+|Live mode  |Yes                |Yes            |
 |Watch mode |Yes                |Yes            |
+|settings   |no                 |see below      |
+
+-----
+Introduced for processing-3.0 is the `settings` method, but this is hidden for users of the processing ide. This is where `size` belongs or `full_screen`, also you should set `smooth` and `pixel_density` here. Retina users can make use of their hi-dpi display by setting `pixel_density(2)`, NB: size should be first line of `settings`.
