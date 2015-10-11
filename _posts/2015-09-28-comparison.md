@@ -22,4 +22,4 @@ categories: jruby_art update
 |settings   |no                 |see below      |
 
 -----
-Introduced for processing-3.0 is the `settings` method, but this is hidden for users of the processing ide. This is where `size` belongs or `full_screen`, also you should set `smooth` and `pixel_density` here. Retina users can make use of their hi-dpi display by setting `pixel_density(2)`, NB: size should be first line of `settings`.
+Introduced for processing-3.0 is the `settings` method, but this is hidden for users of the processing ide. This is where `size` belongs or `full_screen`, also you should set `smooth` and `pixel_density` here. Retina users can make use of their hi-dpi display by setting `pixel_density(2)`, NB: size should be first line of `settings`, and if used `pixel_density(2)` should be next.
