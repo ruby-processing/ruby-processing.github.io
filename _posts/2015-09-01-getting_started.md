@@ -77,7 +77,7 @@ def draw
 end
 
 def settings
-  size 200, 200, FX2D
+  size 200, 200
   # smooth # here
 end
 {% endhighlight %}
