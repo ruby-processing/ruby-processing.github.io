@@ -16,7 +16,7 @@ Install JRubyArt gem:-
 
 {% highlight bash %}
 gem install jruby_art
-k9 setup install # downloads and installs jruby-9.0.1.0 complete requires wget
+k9 setup install # downloads and installs jruby-9.0.3.0 complete requires wget
 k9 setup unpack_samples # downloads and unpacks samples requires wget
 {% endhighlight %}
 
@@ -40,7 +40,7 @@ sketchbook_path: # user defined needed to pick up libraries
 
 {% highlight yaml %}
 # Example YAML configuration file for jruby_art on Windows
-# K9_ROOT: "C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/jruby_art-0.9.0" # should not be necessary
+# K9_ROOT: "C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/jruby_art-1.0.0" # should not be necessary
 PROCESSING_ROOT: "C:/Java/Processing" # just a suggestion
 sketchbook: "C:/Users/USER/Documents/Processing" # adjust to suit your install
 # JRUBY: false # uncomment to use jruby-complete by default especially if you haven't installed jruby
