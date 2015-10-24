@@ -32,7 +32,7 @@ map1d(10, (0..20), (0..1.0)) # returns 0.5
 Example Usages: [Mandelbrot][mandelbrot], [Game of Life][conway]
 
 ### radians and degrees methods
-A replacement for processings radians(x) and degree(x) methods (in ruby everything is an object!!)
+A replacement for processings radians(x) and degree(x) methods _in ruby everything is an object!!_
 
 {% highlight ruby %}
 x.radians # we did this by monkey patching ruby numeric
@@ -41,7 +41,8 @@ x.degrees
 
 Note: ruby already provides x.abs, x.to_s, and x.to_f replacing abs(x), str(x), and float(x) etc 
 
-
+Example Usages:
+[bezier ellipse][bezier], [brick tower][brick_tower]
 
 ### find_method method
 A convenient way of finding a method
@@ -56,8 +57,9 @@ map1d
 p5map
 {% endhighlight %}
 
-
-[mandelbrot]: https://github.com/ruby-processing/samples4ruby-processing3/blob/master/contributed/mandelbrot.rb
-[conway]: https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/topics/shaders/conway.rb
-[color]: https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/basics/color/creating.rb
-[blend_color]: https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/basics/color/blend_color.rb
+[bezier]:https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/basics/form/bezier_ellipse.rb
+[brick_tower]:https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/basics/form/brick_tower.rb
+[mandelbrot]:https://github.com/ruby-processing/samples4ruby-processing3/blob/master/contributed/mandelbrot.rb
+[conway]:https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/topics/shaders/conway.rb
+[color]:https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/basics/color/creating.rb
+[blend_color]:https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/basics/color/blend_color.rb
