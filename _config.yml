@@ -4,7 +4,7 @@ highlighter: pygments
 title: JRubyArt (Code as Art)
 email: mamba2928@yahoo.co.uk
 description: > # this means to ignore newlines until "baseurl:"
-  JRubyArt is a ruby wrapper for processing-3.0. For processing-2.0, use
+  JRubyArt is a ruby wrapper for processing-3.0.1+ For processing-2.0, use
   ruby-processing.
 baseurl: "" # the subpath of your site, e.g. /blog/
 urls:
@@ -19,4 +19,6 @@ syntax-highlighting:
   css: syntax.css        
 # Build settings
 markdown: kramdown
+gems:
+  - jekyll-sitemap
 

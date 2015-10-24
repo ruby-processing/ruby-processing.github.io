@@ -31,6 +31,18 @@ map1d(10, (0..20), (0..1.0)) # returns 0.5
 
 Example Usages: [Mandelbrot][mandelbrot], [Game of Life][conway]
 
+### radians and degrees methods
+A replacement for processings radians(x) and degree(x) methods (in ruby everything is an object!!)
+
+{% highlight ruby %}
+x.radians # we did this by monkey patching ruby numeric
+x.degrees 
+{% endhighlight %}
+
+Note: ruby already provides x.abs, x.to_s, and x.to_f replacing abs(x), str(x), and float(x) etc 
+
+
+
 ### find_method method
 A convenient way of finding a method
 {% highlight ruby %}

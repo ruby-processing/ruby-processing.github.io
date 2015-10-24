@@ -1,16 +1,16 @@
 ---
 layout: post
 title:  "Getting Started"
-date:   2015-10-01 06:24:13
+date:   2015-10-24 06:24:13
 categories: jruby_art update
 ---
 ### Install
 
-Install [processing-3.0][processing] if you are on Windows, prefer to install in say `C:/Java/Processing` ie folders without special characters or spaces. You need to let JRubyArt know where you've installed processing using config.yml see Configuration. 
+Install [processing-3.0.1][processing] if you are on Windows, prefer to install in say `C:/Java/Processing` ie folders without special characters or spaces. You need to let JRubyArt know where you've installed processing using config.yml see Configuration. 
 
-Install processings [video library][video] and [audio library][audio] from the processing-3.0 ide (separate install since processing-3.0).
+Install processings [video library][video] and [audio library][audio] from the processing-3.0.1 ide (separate install since processing-3.0).
 
-Install `jdk1.8.0_60+` can be openjdk with OpenJFX _a separate download works on ArchLinux_ probably safer to go with the [Oracle version][jdk], currently FX2D is still experimental but may eventually replace JAVA2D
+Install `jdk1.8.0_60+` can be openjdk with OpenJFX _a separate download works on ArchLinux_ probably safer to go with the [Oracle version][jdk], currently FX2D is still experimental, but eventually it might replace JAVA2D
 
 Install JRubyArt gem:-
 
@@ -26,7 +26,7 @@ Config file is `config.yml` in the `~/.jruby_art folder` so can co-exist with a 
 
 {% highlight yaml %}
 # Example YAML configuration file for jruby_art on linux
-PROCESSING_ROOT: /home/tux/processing-3.0
+PROCESSING_ROOT: /home/tux/processing-3.0.1
 # important sketch_book path may be different for processing-3.0
 sketchbook_path: /home/tux/sketchbook 
 {% endhighlight %}
