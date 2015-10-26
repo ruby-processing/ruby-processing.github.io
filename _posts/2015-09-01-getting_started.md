@@ -3,6 +3,7 @@ layout: post
 title:  "Getting Started"
 date:   2015-10-24 06:24:13
 categories: jruby_art update
+permalink: /started/
 ---
 ### Install
 
@@ -82,8 +83,11 @@ def settings
 end
 {% endhighlight %}
 
+Read more about using the [processing api here][api]
+
 [processing]:https://www.processing.org/tutorials/gettingstarted/
 [video]:https://www.processing.org/reference/libraries/video/
 [audio]:https://processing.org/reference/libraries/sound/
 [jdk]:http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 [config]:https://github.com/ruby-processing/Example-Sketches/blob/master/samples/JRubyArt/JRubyArt.pde
+[api]: {{ site.url }}/api/

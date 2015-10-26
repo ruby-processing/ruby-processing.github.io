@@ -3,8 +3,9 @@ layout: post
 title:  "Using The Processing API"
 date:   2015-10-25 15:07:00
 categories: jruby_art update
+permalink: /api/
 ---
-Most of the processing methods, as explained in the [Processing Language API][api], are available as instance methods to the Processing::App. (frame_rate, ellipse, many others).  But there are [exceptions][alternatives] see below and [here][alternatives], where good or better alternatives already exist in ruby. Also make sure you take a look at the many included example sketches, where ruby [core][core] and [Math][Math] methods are preferred over the processing/java alternative eg `rand(0.0..4)` is preferred over `random(0, 4.0)`.
+Most of the processing methods, as explained in the [Processing Language API][api], are available as instance methods to the Processing::App. (frame_rate, ellipse, many others).  But there are [exceptions][alternatives] see below and [here][alternatives], where good or better alternatives already exist in ruby. Also make sure you take a look at the many [included example sketches][sketches], where ruby [core][core] and [Math][Math] methods are preferred over the processing/java alternative eg `rand(0.0..4)` is preferred over `random(0, 4.0)`.
 
 {% highlight ruby %}
 
@@ -63,3 +64,4 @@ Also prefer [`Vec2D`][vec2] and [`Vec3D`][vec3] to [`PVector`][pvector] follow l
 [pvector]:https://processing.org/reference/PVector.html
 [Math]:http://ruby-doc.org/core-2.2.2/Math.html
 [core]:http://ruby-doc.org/core-2.2.3/
+[sketches]:https://github.com/ruby-processing/samples4ruby-processing3
