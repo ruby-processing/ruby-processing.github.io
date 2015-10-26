@@ -29,7 +29,7 @@ class TrianglesGoneWild < Processing::App
 end
 {% endhighlight %}
 
-Here is the same sketch without the class wrapper (matches processing ide version), except that we need to explicitly put size and sketch in settings.
+Here is the same sketch without the class wrapper (matches processing ide version), except that we need to explicitly put size and smooth in settings.
 
 {% highlight ruby %}
 
