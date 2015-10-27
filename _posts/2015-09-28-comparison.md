@@ -5,6 +5,18 @@ date:   2015-09-28 06:24:13
 categories: jruby_art update
 ---
 
+<style>
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:2px solid #0000FF;
+}
+
+th{
+    border:2px solid #0000FF;
+}
+</style>
+
 |feature    |  ruby-processing  |  JRubyArt       |
 |---------- |:-------------:    |------:          |
 |binary     |rp5                |k9               |

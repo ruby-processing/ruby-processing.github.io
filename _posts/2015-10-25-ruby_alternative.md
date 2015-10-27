@@ -5,9 +5,21 @@ date:   2015-10-25 17:21:00
 categories: jruby_art update
 permalink: /alternatives/
 ---
+<style>
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:2px solid #0000FF;
+}
+
+th{
+    border:2px solid #0000FF;
+}
+</style>
+Here is a list of ruby alternatives to some 'processing' convenience methods; which with the exception of `color`, `map1d`, `p5map`, `degrees` and `radians` are just regular ruby methods.
 
 |function       |processing            |JRubyArt           |
-|----------     |:-------------:       |------:            |
+|----------     |-------------       |------            |
 |color string   |`color(#cc6600)`      |`color('#cc6600')` |
 |date/time      |                      |`t = Time.now`       |
 |               |`day`                   |`t.day`              |
