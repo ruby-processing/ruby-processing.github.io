@@ -29,7 +29,7 @@ class TrianglesGoneWild < Processing::App
 end
 {% endhighlight %}
 
-Here is the same sketch without the class wrapper (matches processing ide version), except that we need to explicitly put size and smooth in settings.
+Here is the same sketch without the class wrapper (matches processing ide version), except that we need to explicitly put size and smooth in [settings][settings].
 
 {% highlight ruby %}
 
@@ -65,3 +65,4 @@ Also prefer [`Vec2D`][vec2] and [`Vec3D`][vec3] to [`PVector`][pvector] follow l
 [Math]:http://ruby-doc.org/core-2.2.2/Math.html
 [core]:http://ruby-doc.org/core-2.2.3/
 [sketches]:https://github.com/ruby-processing/samples4ruby-processing3
+[settings]:https://processing.org/reference/settings_.html

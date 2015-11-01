@@ -23,7 +23,7 @@ k9 setup unpack_samples # downloads and unpacks samples requires wget
 
 ### Configuration
 
-Config file is `config.yml` in the `~/.jruby_art folder` so can co-exist with a ruby-processing install (~/.rp5rc)
+Config file is `config.yml` in the `~/.jruby_art folder` so it can co-exist with a ruby-processing install (~/.rp5rc), but not so easy if processing is stored in a default location on macosx and Windows.
 
 {% highlight yaml %}
 # Example YAML configuration file for jruby_art on linux
@@ -83,7 +83,7 @@ def settings
 end
 {% endhighlight %}
 
-Read more about using the [processing api here][api]
+Read more about using the [processing api here][api] 
 
 [processing]:https://www.processing.org/tutorials/gettingstarted/
 [video]:https://www.processing.org/reference/libraries/video/
