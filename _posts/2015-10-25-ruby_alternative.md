@@ -49,3 +49,9 @@ Here is a list of ruby alternatives to some 'processing' convenience methods; wh
 |format         |`nf(nf(num, left, right)`|`see below`     |
 
 `num.to_s.rjust(left, '0').ljust(left + right, '0')`
+
+For examples of using time in sketches see [learning JRubyArt blog][time], [timestamp][timestamp] and this [clock sketch][clock].
+
+[time]:https://monkstone.github.io/_posts/time
+[timestamp]:https://monkstone.github.io/_posts/timestamp
+[clock]:https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/library/fastmath/clock.rb
