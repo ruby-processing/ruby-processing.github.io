@@ -19,7 +19,8 @@ th{
 Here is a list of ruby alternatives to some 'processing' convenience methods; which with the exception of `color`, `map1d`, `p5map`, `degrees` and `radians` are just regular ruby methods.
 
 |function       |processing            |JRubyArt           |
-|----------     |-------------       |------            |
+|----------     |-------------       |------               |
+|camera         |`camera(args)`      |`kamera(hash_args)`  |
 |color string   |`color(#cc6600)`      |`color('#cc6600')` |
 |date/time      |                      |`t = Time.now`       |
 |               |`day`                   |`t.day`              |
@@ -52,6 +53,9 @@ Here is a list of ruby alternatives to some 'processing' convenience methods; wh
 
 For examples of using time in sketches see [learning JRubyArt blog][time], [timestamp][timestamp] and this [clock sketch][clock].
 
+For example of `kamera` usage see my [blog][blog].
+
 [time]:https://monkstone.github.io/_posts/time
 [timestamp]:https://monkstone.github.io/_posts/timestamp
 [clock]:https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/library/fastmath/clock.rb
+[blog]:http://monkstone.github.io/_posts/kamera/
