@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Getting Started on the Mac"
-date:   2015-11-21 06:54:13
+title:  "Getting Started on Linux"
+date:   2015-11-21 06:24:13
 categories: jruby_art update
-permalink: /mac_start/
+permalink: /linux_started/
 ---
 
 ### Getting Started With JRubyArt (stolen from [Ben Lewis][ben])
@@ -36,21 +36,33 @@ Why was ruby-processing not updated to use processing3.0+? The [major changes][c
 
 ### Setup
 
-Setting JRubyArt for the first time, can seem a bit involved (especially if you are addicted to rvm or rbenv). The JRubyArt gem relies on JRuby-9.0.4.0+, Processing-3.0.1, and a handful of other dependencies. Here's how to get them all installed and working on the Mac.
+Setting JRubyArt for the first time, can seem a bit involved (especially if you are addicted to rvm or rbenv). The JRubyArt gem relies on JRuby-9.0.4.0+, Processing-3.0.1, and a handful of other dependencies. Here's how to get them all installed and working on linux.
 
-Install homebrew, wget, java (1.8+)
+You will likely have wget installed, install jdk-8 can be OpenJDK, but make sure to install OpenJFX as well (JavaFX is included with the Oracle version), and some version of ruby-2.1+ preferably jruby-9.0.4.0. If your distro does not offer a sufficiently up to date version of java install Oracle version in `/opt` as suggested for jruby and create appropriate links (use `update-alternatives` for a debian based distro).
 
 ### Processing
 
-You can check to see what platforms are supported [here][platforms].
-Download Processing-3.0.1+ from the [official website][official] and install it. When you're done, make sure that the resulting app is located in your /Applications directory. Fire up processing, and use the processing ide to install the sound and video libraries as these are no longer included in the
-download (but you will surely want them):-
+If you are on ArchLinux 
+{% highlight bash %}
+sudo pacman -S processing # installs processing-3.0.1
+{% endhighlight %}
+
+Otherwise you can check to see what platforms are officially supported [here][platforms].
+
+Download Processing-3.0.1+ from the [official website][official] and install, prefer to install in say `~/processing-3.0.1`, that way you can keep processing-2.2.1 (or earlier version of processing), which you may find useful.  When you're done, make sure to take note of the directory you installed the app to complete the configuration. Fire up processing, and use the processing ide to install the sound and video libraries as these are no longer included in the download (but you will surely want them):-
 
 `Sketch/Import Library/Add Library/Video` _ide menu_
 
 ### JRuby
 
-It is possible to run JRubyArt without a system install of jruby and given the current state of rbenv and rvm support or lack of it for jruby-9.0.4.0 it may be better to defer a system install of jruby until things settle down. However you probably need a jruby install to use JRubyArt with other gems eg toxiclibs. There is a bitanami installer for [jruby-9.0.4.0][bitnami] or you may prefer a homebrew install for jruby-9.0.3.0. I haven't tried either as a linux user.
+For ArchLinux only:-
+
+{% highlight bash %}
+sudo pacman -S jruby # installs jruby-9.0.4.0
+sudo pacman -S ruby # installs up to date MRI ruby
+{% endhighlight %}
+
+For debian (ubuntu/mint etc) distro installers are hopelessly out of date (even for MRI ruby), my preference is to download and install jruby (and MRI ruby) to the `/opt` folder and make use of the excellent update-alternatives tool to create symbolic links to the relevant binaries (this is much more robust than rvm or rbenv). Use rvm or better rbenv if you must, but be aware they can be particulary troublesome on linux (and are completely incompatible, and difficult to get rid of especially rvm).
 
 ### JRubyArt
 
@@ -58,18 +70,25 @@ Configuration:-
 
 JRubyArt needs to know where you've installed processing, where your processing sketchbook lives (for the video and audio libraries etc), and whether you've done a system/user install of jruby.
 
-Config file is `config.yml` in the `~/.jruby_art folder` so it can co-exist with a ruby-processing install (~/.rp5rc), but not on the Mac.
+Config file is `config.yml` in the `~/.jruby_art folder` so it can co-exist with a ruby-processing install (~/.rp5rc), it is advisable to have separate folders for processing-3.0 and processing-2.2.1 sketchbooks.
 
 {% highlight yaml %}
-# Example YAML configuration file for jruby_art on macosx
-PROCESSING_ROOT: /Applications/Processing.app/Contents/Java
+# Example YAML configuration file for jruby_art on linux (debian etc)
+PROCESSING_ROOT: /home/tux/processing-3.0.1
 # important sketch_book path may be different for processing-3.0
-sketchbook_path: # user defined path, to pick up video/audio libraries etc
-# set false if you haven't installed jruby, avoids need for --nojruby flag
-JRUBY: false # uses jruby-complete by default for running skethes 
+sketchbook_path: /home/tux/sketchbook 
 {% endhighlight %}
 
-If you can/are using rvm or rbenv switch to using jruby-9.0.3.0+ then
+Alternative but probably only for ArchLinux 
+
+{% highlight yaml %}
+# Example YAML configuration file for jruby_art on ArchLinux 
+PROCESSING_ROOT: /usr/share/linux
+# important sketch_book path may be different for processing-3.0
+sketchbook_path: /home/tux/sketchbook 
+{% endhighlight %}
+
+If you can/are using rvm or rbenv switch to using jruby-9.0.4.0+ then
 
 {% highlight bash %}
 gem install jruby_art
@@ -124,11 +143,11 @@ k9 --nojruby run monjori.rb # run the Monjori sketch with jruby-complete
 
 {% highlight bash %}
 k9 create fred 200 200 # creates a bare sketch fred.rb (see below)
-vim fred.rb 
+vim fred.rb # other editors are available
 :!k9 run % # from vim runs the sketch 
 {% endhighlight %}
 
-other [editors][editors] are available
+You may want to try other [development environments][editor] eg emacs or even netbeans. Needless to say ArchLinux can install these for you, but both need a bit of post install love get the best out of them (vim in the main just works, and is super light weight).
 
 {% highlight ruby %}
 def setup
@@ -148,7 +167,6 @@ end
 Read more about using the [processing api here][api]
 
 [api]: {{ site.url }}/api/
-[editors]:{{ site.url }}/editors/
 [ben]:https://blog.engineyard.com/2015/getting-started-with-ruby-processing
 [processing]:https://processing.org/
 [gem]:https://rubygems.org/gems/ruby-processing
@@ -156,4 +174,5 @@ Read more about using the [processing api here][api]
 [changes]:https://github.com/processing/processing/wiki/Changes-in-3.0
 [official]:https://processing.org/download/?processing
 [platforms]:https://github.com/processing/processing/wiki/Supported-Platforms
-[bitnami]:https://bitnami.com/stack/jruby/installer
+[editor]:{{ site.url }}/editors/
+

@@ -126,6 +126,9 @@ vim fred.rb # other editors are available
 :!k9 run % # from vim runs the sketch 
 {% endhighlight %}
 
+As a windows user you may find [jEdit][jedit] to be a more suitable editor.
+
+
 {% highlight ruby %}
 def setup
   sketch_title 'Fred'
@@ -152,3 +155,4 @@ Read more about using the [processing api here][api]
 [official]:https://processing.org/download/?processing
 [platforms]:https://github.com/processing/processing/wiki/Supported-Platforms
 [bitnami]:https://bitnami.com/stack/jruby/installer
+[jedit]:{{ site.url }}/editors/
