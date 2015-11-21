@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  "Getting Started on the Mac"
-date:   2015-11-21 06:54:13
+title:  "Getting Started On Windows"
+date:   2015-11-21 14:15:13
 categories: jruby_art update
-permalink: /mac_start/
+permalink: /windows_start/
 ---
-
 ### Getting Started With JRubyArt (stolen from [Ben Lewis][ben])
 
 If you love to code because it is a creative process, then you should give JRubyArt a try because it can be used to create music, art, animations, videos and much more. Also since it is based on the latest [Processing][processing] you can access a vast range of libraries to make the difficult things easier.
@@ -36,21 +35,21 @@ Why was ruby-processing not updated to use processing3.0+? The [major changes][c
 
 ### Setup
 
-Setting JRubyArt for the first time, can seem a bit involved (especially if you are addicted to rvm or rbenv). The JRubyArt gem relies on JRuby-9.0.4.0+, Processing-3.0.1, and a handful of other dependencies. Here's how to get them all installed and working on the Mac.
+Setting JRubyArt for the first time, can seem a bit involved (especially if you are addicted to rvm or rbenv). The JRubyArt gem relies on JRuby-9.0.4.0+, Processing-3.0.1, and a handful of other dependencies. Here's how to get them all installed and working on Windows.
 
-Install homebrew, wget, java (1.8+)
+Install wget, java (1.8+), and some version of ruby-2.1+ preferably jruby-9.0.4.0.
 
 ### Processing
 
 You can check to see what platforms are supported [here][platforms].
-Download Processing-3.0.1+ from the [official website][official] and install it. When you're done, make sure that the resulting app is located in your /Applications directory. Fire up processing, and use the processing ide to install the sound and video libraries as these are no longer included in the
+Download Processing-3.0.1+ from the [official website][official] and install, prefer to install in say `C:/Java/Processing` ie folders without special characters or spaces.  When you're done, make sure to take note of the directory you installed the app to complete the configuration. Fire up processing, and use the processing ide to install the sound and video libraries as these are no longer included in the
 download (but you will surely want them):-
 
 `Sketch/Import Library/Add Library/Video` _ide menu_
 
 ### JRuby
 
-It is possible to run JRubyArt without a system install of jruby and given the current state of rbenv and rvm support or lack of it for jruby-9.0.4.0 it may be better to defer a system install of jruby until things settle down. However you probably need a jruby install to use JRubyArt with other gems eg toxiclibs. There is a bitanami installer for [jruby-9.0.4.0][bitnami] or you may prefer a homebrew install for jruby-9.0.3.0. I haven't tried either as a linux user.
+It is possible to run JRubyArt without a system install of jruby and given the current state of rbenv and rvm support or lack of it for jruby-9.0.4.0 it may be better to defer a system install of jruby until things settle down. However you probably need a jruby install to use JRubyArt with other gems eg toxiclibs. There is bitnami installer for [jruby-9.0.4.0][bitnami] but I haven't tried it as linux use (Archlinux linux distro has unbeatable support for both jruby and processing).
 
 ### JRubyArt
 
@@ -58,18 +57,17 @@ Configuration:-
 
 JRubyArt needs to know where you've installed processing, where your processing sketchbook lives (for the video and audio libraries etc), and whether you've done a system/user install of jruby.
 
-Config file is `config.yml` in the `~/.jruby_art folder` so it can co-exist with a ruby-processing install (~/.rp5rc), but not on the Mac.
+Config file is `config.yml` in the `~/.jruby_art folder` so it can co-exist with a ruby-processing install (~/.rp5rc), it is advisable to have separate folders for processing-3.0 and processing-2.2.1 sketchbooks.
 
 {% highlight yaml %}
-# Example YAML configuration file for jruby_art on macosx
-PROCESSING_ROOT: /Applications/Processing.app/Contents/Java
-# important sketch_book path may be different for processing-3.0
-sketchbook_path: # user defined path, to pick up video/audio libraries etc
-# set false if you haven't installed jruby, avoids need for --nojruby flag
-JRUBY: false # uses jruby-complete by default for running skethes 
+# Example YAML configuration file for jruby_art on Windows
+# K9_ROOT: "C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/jruby_art-1.0.1" # should not be necessary
+PROCESSING_ROOT: "C:/Java/Processing" # just a suggestion
+sketchbook: "C:/Users/USER/Documents/Processing" # adjust to suit your install
+# JRUBY: false # uncomment to use jruby-complete by default especially if you haven't installed jruby
 {% endhighlight %}
 
-If you can/are using rvm or rbenv switch to using jruby-9.0.3.0+ then
+If you can/are using rvm or rbenv switch to using jruby-9.0.4.0+ then
 
 {% highlight bash %}
 gem install jruby_art
