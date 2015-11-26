@@ -49,7 +49,12 @@ download (but you will surely want them):-
 
 ### JRuby
 
-It is possible to run JRubyArt without a system install of jruby and given the current state of rbenv and rvm support or lack of it for jruby-9.0.4.0 it may be better to defer a system install of jruby until things settle down. However you probably need a jruby install to use JRubyArt with other gems eg toxiclibs. There is bitnami installer for [jruby-9.0.4.0][bitnami] but I haven't tried it as linux use (Archlinux linux distro has unbeatable support for both jruby and processing).
+It might actually be simpler to just install [jruby][jruby] on Windows rather
+than struggle with MRI ruby, but you may also want to install [cygwin][cygwin] or similar in any case. 
+
+If you've already installed MRI ruby is also possible to run JRubyArt without a system install of jruby. But a jruby install might be needed to use JRubyArt with other gems eg toxiclibs.
+
+Possibly the simplest way to get MRI ruby on windows is via [rubyinstaller][rubyinstaller], uses MinGW. Alternatively you can install [cygwin][cygwin] and use [rvm][rvm] to install MRI ruby.
 
 ### JRubyArt
 
@@ -154,5 +159,8 @@ Read more about using the [processing api here][api]
 [changes]:https://github.com/processing/processing/wiki/Changes-in-3.0
 [official]:https://processing.org/download/?processing
 [platforms]:https://github.com/processing/processing/wiki/Supported-Platforms
-[bitnami]:https://bitnami.com/stack/jruby/installer
+[jruby]:https://github.com/jruby/jruby/wiki/GettingStarted
 [jedit]:{{ site.url }}/editors/
+[cygwin]:https://www.cygwin.com/
+[rubyinstaller]:http://rubyinstaller.org/downloads/
+[rvm]:http://blog.developwithpassion.com/2012/03/30/installing-rvm-with-cygwin-on-windows/
