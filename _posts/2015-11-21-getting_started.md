@@ -8,7 +8,7 @@ permalink: /linux_started/
 
 ### Getting Started With JRubyArt (stolen from [Ben Lewis][ben])
 
-If you love to code because it is a creative process, then you should give JRubyArt a try because it can be used to create music, art, animations, videos and much more. Also since it is based on the latest [Processing][processing] you can access a vast range of libraries to make the difficult things easier.
+If you love to code because it is a creative process, then you should give JRubyArt a try because it can be used to [create music][sound], art, animations, [videos][video] and much more. Also since it is based on the latest [Processing][processing] you can access a vast range of libraries to make the difficult things easier.
 
 ### What Is Processing?
 
@@ -175,4 +175,5 @@ Read more about using the [processing api here][api]
 [official]:https://processing.org/download/?processing
 [platforms]:https://github.com/processing/processing/wiki/Supported-Platforms
 [editor]:{{ site.url }}/editors/
-
+[sound]:http://monkstone.github.io/_posts/sound/
+[video]:http://monkstone.github.io/_posts/
