@@ -45,6 +45,47 @@ end_shape(CLOSE)
 ...
 {% endhighlight %}
 
-For an advanced use of the ShapeRenderer see the [trefoil sketch][trefoil]
+Here is code snippet for use of a `ShapeRender` with `Vec2D`, where `original` is an array of `Vec2D` describing a closed polygon. We use and attr_reader for `s` so that we can define it one block of code and use `shape(s)` to call it in the draw loop in the normal way for a 'retained shape/vbo'.
 
+{% highlight ruby %}
+attr_reader :s
+...
+@s = create_shape
+renderer = ShapeRender.new(s)
+s.begin_shape
+s.fill(127)
+s.stroke(0)
+s.stroke_weight(2)
+original.map{ |v| v.to_vertex(renderer) }
+s.end_shape(CLOSE)
+...
+shape(s)
+{% endhighlight %}  
+
+There is also the possibility of adding texture see this `ShapeRender` usage snippet:-
+
+{% highlight ruby %}
+...
+# Put all the relevant data into the PShape
+
+texture_mode(NORMAL) # set texture_mode to normalized (range 0 to 1)
+tex = load_image(data_path 'Texture01.jpg')
+
+mesh = create_shape # create the initial PShape
+renderer = ShapeRender.new(mesh) # initialize the shape renderer
+mesh.begin_shape(QUADS) # define the PShape type: QUADS
+mesh.no_stroke
+mesh.texture(tex) # set a texture to make a textured PShape
+# put all the vertices, uv texture coordinates and normals into the PShape
+positions.each_with_index do |p, i|
+  t = tex_coords[i]
+  p.to_vertex_uv(renderer, t.x, t.y)
+end
+mesh.end_shape
+...
+{% endhighlight %}
+
+The above snippet is taken from the [glsl_heighmap_noise.rb sketch][glsl], for another example of the advanced use of the ShapeRenderer see the [trefoil sketch][trefoil].
+
+[glsl]:https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/topics/shaders/glsl_heightmap_noise.rb
 [trefoil]:https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/demos/graphics/trefoil.rb
