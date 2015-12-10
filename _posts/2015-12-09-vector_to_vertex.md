@@ -88,7 +88,7 @@ mesh.end_shape
 ...
 {% endhighlight %}
 
-The above snippet is taken from the [glsl_heighmap_noise.rb sketch][glsl], for another example of the advanced use of the ShapeRenderer see the [trefoil sketch][trefoil].
+The above snippet is taken from the [glsl_heighmap_noise.rb sketch][glsl], for another example of the advanced use of the ShapeRender class see the [trefoil sketch][trefoil].
 
 [glsl]:https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/topics/shaders/glsl_heightmap_noise.rb
 [trefoil]:https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/demos/graphics/trefoil.rb
