@@ -6,8 +6,9 @@ categories: jruby_art update
 keywords: to_vertex, Vec3D, Vec2D, AppRender, ShapeRender
 permalink: /app_render/
 ---
-Vec2D and Vec3D classes can be efficiently rendered as both PApplet vertices, and PShape vertices using AppRender and ShapeRender utility classes. To use either renderer you should create a single instance in the processing setup see below AppRender as example:-
+Vec2D and Vec3D classes can be efficiently rendered as both PApplet vertices, and PShape vertices using AppRender and ShapeRender utility classes. To use the AppRender renderer you should create a single instance in the processing setup see below example:-
 
+###AppRender
 {% highlight ruby %}
 attr_reader :renderer
 ...
@@ -45,7 +46,9 @@ end_shape(CLOSE)
 ...
 {% endhighlight %}
 
-Here is code snippet for use of a `ShapeRender` with `Vec2D`, where `original` is an array of `Vec2D` describing a closed polygon. We use and attr_reader for `s` so that we can define it one block of code and use `shape(s)` to call it in the draw loop in the normal way for a 'retained shape/vbo'.
+###ShapeRender
+
+Usage of the ShapeRender is similar, except that you need to `create_shape` first, and it is the created `shape` that needs to be available in the draw loop. Here is a code snippet for use of a `ShapeRender` with `Vec2D`, where `original` is an array of `Vec2D` describing a closed polygon. We use an attr_reader for `s` so that we can define it one block of code and use `shape(s)` to call it in the draw loop in the normal way for a 'retained shape/vbo'.
 
 {% highlight ruby %}
 attr_reader :s
