@@ -49,7 +49,11 @@ sudo pacman -S processing # installs processing-3.0.1
 
 Otherwise you can check to see what platforms are officially supported [here][platforms].
 
-Download Processing-3.0.1+ from the [official website][official] and install, prefer to install in say `~/processing-3.0.1`, that way you can keep processing-2.2.1 (or earlier version of processing), which you may find useful.  When you're done, make sure to take note of the directory you installed the app to complete the configuration. Fire up processing, and use the processing ide to install the sound and video libraries as these are no longer included in the download (but you will surely want them):-
+Download Processing-3.0.1+ from the [official website][official] and install, prefer to install in say `~/processing-3.0.1`, that way you can keep processing-2.2.1 (or earlier version of processing), which you may find useful.  When you're done, make sure to take note of the directory you installed the app to complete the configuration. 
+
+__Finishing up__
+
+Fire up processing, and use the processing ide to install the sound and video libraries as these are no longer included in the download (but you will surely want them):-
 
 `Sketch/Import Library/Add Library/Video` _ide menu_
 

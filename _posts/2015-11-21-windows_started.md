@@ -42,7 +42,11 @@ Install wget, java (1.8+), and some version of ruby-2.1+ preferably jruby-9.0.4.
 ### Processing
 
 You can check to see what platforms are supported [here][platforms].
-Download Processing-3.0.1+ from the [official website][official] and install, prefer to install in say `C:/Java/Processing` ie folders without special characters or spaces.  When you're done, make sure to take note of the directory you installed the app to complete the configuration. Fire up processing, and use the processing ide to install the sound and video libraries as these are no longer included in the
+Download Processing-3.0.1+ from the [official website][official] and install, prefer to install in say `C:/Java/Processing` ie folders without special characters or spaces.  When you're done, make sure to take note of the directory you installed the app to complete the configuration. 
+
+__Finishing up__
+
+Fire up processing, and use the processing ide to install the sound and video libraries as these are no longer included in the
 download (but you will surely want them):-
 
 `Sketch/Import Library/Add Library/Video` _ide menu_
@@ -50,7 +54,7 @@ download (but you will surely want them):-
 ### JRuby
 
 It might actually be simpler to just install [jruby][jruby] on Windows rather
-than struggle with MRI ruby, but you may also want to install [cygwin][cygwin] or similar in any case. 
+than struggle with MRI ruby, but you may also want to install [cygwin][cygwin] or similar in any case (cygwin at least includes wget). 
 
 If you've already installed MRI ruby is also possible to run JRubyArt without a system install of jruby. But a jruby install might be needed to use JRubyArt with other gems eg toxiclibs.
 
