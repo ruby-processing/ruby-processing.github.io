@@ -88,7 +88,8 @@ mesh.end_shape
 ...
 {% endhighlight %}
 
-The above snippet is taken from the [glsl_heighmap_noise.rb sketch][glsl], for another example of the advanced use of the ShapeRender class see the [trefoil sketch][trefoil].
+The above snippet is taken from the [glsl_heighmap_noise.rb sketch][glsl], for another example of the advanced use of the ShapeRender class see the [trefoil sketch][trefoil]. Warning if you are using ShapeRender inside a custom class you need to prefix it with the sketch class name `Sketch::` for bare sketches, see [wiggle_pshape][wiggling] sketch.
 
 [glsl]:https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/topics/shaders/glsl_heightmap_noise.rb
 [trefoil]:https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/demos/graphics/trefoil.rb
+[wiggling]:https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/library/vecmath/vec2d/wiggle_pshape.rb
