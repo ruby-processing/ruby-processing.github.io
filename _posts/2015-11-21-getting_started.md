@@ -18,9 +18,9 @@ Processing was built by Casey Reas and Benjamin Fry, two protegés of interdisci
 
 Since the project began in 2001, it's been helping teach people to program in a visual art context using a simplified version of Java. It comes packaged as an IDE that can be downloaded and used to create and save digital art “sketches”.
 
-In 2009, Jeremy Ashkenas (aka jashkenas, creator of Backbone.JS, Underscore.JS, and Coffeescript), published the original [ruby-processing gem][gem]. It wraps Processing in a shim that makes it even easier to get started if you know Ruby. It has been since updated to use processing-2.2.1 by Martin Prout (final version using jruby-1.7.23 corresponding to ruby-1.9.3 syntax), NB: no more releases are expected, and ruby-processing is not compatible with processing-3.0+.
+In 2009, Jeremy Ashkenas (aka jashkenas, creator of Backbone.JS, Underscore.JS, and Coffeescript), published the original [ruby-processing gem][gem]. It wraps Processing in a shim that makes it even easier to get started if you know Ruby. It has been since updated to use processing-2.2.1 by Martin Prout (final version using jruby-1.7.24 corresponding to ruby-1.9.3 syntax), NB: no more releases are expected, and ruby-processing is not compatible with processing-3.0+.
 
-In 2015, Martin Prout (aka monkstone) published the [JRubyArt gem][jrubyart], loosely based on the original ruby-processing, but updated to use processing-3.0+ and jruby-9.0.4.0+ (ruby-2.2 syntax)
+In 2015, Martin Prout (aka monkstone) published the [JRubyArt gem][jrubyart], loosely based on the original ruby-processing, but updated to use processing-3.0+ and jruby-9.0.5.0+ (ruby-2.2 syntax)
 
 ### Why JRubyArt?
 
@@ -32,13 +32,13 @@ Additionally, you don't have to declare types, voids, or understand the differen
 
 Although there are some drawbacks to using the Ruby version Processing (slower start up time, and sometimes performance), having Ruby's API available to translate your ideas into sketches more than makes up for them.
 
-Why was ruby-processing not updated to use processing3.0+? The [major changes][changes] between processing-2.2.1 and processing-3.0 are not backward compatible. Furthermore since JRubyArt was designed to use jruby-9.0.0.0 from the outset, it makes use of the more literate ruby-2.2 syntax (although the original ruby-processing will run with jruby-9.0.0.0, the examples and the ruby-processing library are all based on ruby-1.9.3 syntax).
+Why was ruby-processing not updated to use processing3.0+? The [major changes][changes] between processing-2.2.1 and processing-3.0 are not backward compatible. Furthermore since JRubyArt was designed to use jruby-9.0.0.0 from the outset, it makes use of the more literate ruby-2.2 syntax (although the original ruby-processing will run with jruby-9.0.5.0, the examples and the ruby-processing library are all based on ruby-1.9.3 syntax).
 
 ### Setup
 
-Setting JRubyArt for the first time, can seem a bit involved (especially if you are addicted to rvm or rbenv). The JRubyArt gem relies on JRuby-9.0.4.0+, Processing-3.0.1, and a handful of other dependencies. Here's how to get them all installed and working on linux.
+Setting JRubyArt for the first time, can seem a bit involved (especially if you are addicted to rvm or rbenv). The JRubyArt gem relies on JRuby-9.0.5.0+, Processing-3.0.1, and a handful of other dependencies. Here's how to get them all installed and working on linux.
 
-You will likely have wget installed, install jdk-8 can be OpenJDK, but make sure to install OpenJFX as well (JavaFX is included with the Oracle version), and some version of ruby-2.1+ preferably jruby-9.0.4.0. If your distro does not offer a sufficiently up to date version of java install Oracle version in `/opt` as suggested for jruby and create appropriate links (use `update-alternatives` for a debian based distro).
+You will likely have wget installed, install latest 0racle jdk-8, and some version of ruby-2.2+ preferably jruby-9.0.5.0. If your distro does not offer a sufficiently up to date version of java install Oracle version in `/opt` as suggested for jruby and create appropriate links (use `update-alternatives` for a debian based distro).
 
 ### Processing
 
@@ -49,7 +49,7 @@ sudo pacman -S processing # installs processing-3.0.1
 
 Otherwise you can check to see what platforms are officially supported [here][platforms].
 
-Download Processing-3.0.1+ from the [official website][official] and install, prefer to install in say `~/processing-3.0.1`, that way you can keep processing-2.2.1 (or earlier version of processing), which you may find useful.  When you're done, make sure to take note of the directory you installed the app to complete the configuration. 
+Download Processing-3.0.2+ from the [official website][official] and install, prefer to install in say `~/processing-3.0.2`, that way you can keep processing-2.2.1 (or earlier version of processing), which you may find useful.  When you're done, make sure to take note of the directory you installed the app to complete the configuration. 
 
 __Finishing up__
 
@@ -62,7 +62,7 @@ Fire up processing, and use the processing ide to install the sound and video li
 For ArchLinux only:-
 
 {% highlight bash %}
-sudo pacman -S jruby # installs jruby-9.0.4.0
+sudo pacman -S jruby # installs jruby-9.0.5.0
 sudo pacman -S ruby # installs up to date MRI ruby
 {% endhighlight %}
 
@@ -78,7 +78,7 @@ Config file is `config.yml` in the `~/.jruby_art folder` so it can co-exist with
 
 {% highlight yaml %}
 # Example YAML configuration file for jruby_art on linux (debian etc)
-PROCESSING_ROOT: /home/tux/processing-3.0.1
+PROCESSING_ROOT: /home/tux/processing-3.0.2
 # important sketch_book path may be different for processing-3.0
 sketchbook_path: /home/tux/sketchbook 
 {% endhighlight %}
@@ -92,7 +92,7 @@ PROCESSING_ROOT: /usr/share/linux
 sketchbook_path: /home/tux/sketchbook 
 {% endhighlight %}
 
-If you can/are using rvm or rbenv switch to using jruby-9.0.4.0+ then
+If you can/are using rvm or rbenv switch to using jruby-9.0.5.0+ then
 
 {% highlight bash %}
 gem install jruby_art

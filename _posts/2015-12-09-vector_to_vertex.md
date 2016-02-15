@@ -63,7 +63,7 @@ original.map{ |v| v.to_vertex(renderer) }
 s.end_shape(CLOSE)
 ...
 shape(s)
-{% endhighlight %}  
+{% endhighlight %}
 
 There is also the possibility of adding texture see this `ShapeRender` usage snippet:-
 
