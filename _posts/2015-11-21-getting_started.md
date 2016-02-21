@@ -44,7 +44,7 @@ You will likely have wget installed, install latest 0racle jdk-8, and some versi
 
 If you are on ArchLinux 
 {% highlight bash %}
-sudo pacman -S processing # installs processing-3.0.1
+sudo pacman -S processing # installs processing-3.0.2
 {% endhighlight %}
 
 Otherwise you can check to see what platforms are officially supported [here][platforms].
