@@ -11,7 +11,7 @@ In this special one off we release we feature [example][] JRubyArt sketches usin
 1. [A Basic Sketch](http://monkstone.github.io/jruby_art/update/2016/04/18/hype.html)
 2. [Using Callbacks](http://monkstone.github.io/jruby_art/update/2016/04/20/hype_advanced.html)
 3. [A GLSL Examples](http://monkstone.github.io/jruby_art/update/2016/04/22/hype_scanlines_glsl.html)
-4. [Using nested callbacks](http://monkstone.github.io/jruby_art/update/2016/04/23/hype_tween.html)
+4. [Using nested callbacks](http://monkstone.github.io/nested_callbacks)
 5. [3D Orbiter](http://monkstone.github.io/jruby_art/update/2016/04/23/orbiter.html)
 
 [example]:https://github.com/ruby-processing/samples4ruby-processing3/tree/master/external_library/java/hype
