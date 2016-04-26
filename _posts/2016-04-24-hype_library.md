@@ -17,7 +17,7 @@ In this special one off release, we feature [example][] JRubyArt sketches using 
    This sketch shows how you can use the magic of JRuby to replace anonymous callbacks with a block.
 3. [A GLSL Examples](http://monkstone.github.io/jruby_art/update/2016/04/22/hype_scanlines_glsl.html)
 
-   This sketch shows you a neat method for initialize a pallete of `web-colors`, that Joshua Davis is keen on his `web-colors`, also introduces the `HTimer` class (but I'm not sure that it is either required or actually gets used here).
+   This sketch shows you a neat method for initialize a palette of `web-colors`, that Joshua Davis is keen on his `web-colors`, also introduces the `HTimer` class (but I'm not sure that it is either required or actually gets used here).
 4. [Using nested callbacks](http://monkstone.github.io/nested_callbacks)
 
    This sketch is another example showing how you can use the magic of JRuby to replace anonymous callbacks with a block. Even when those callbacks are nested, as in this sketch. The sketch also features the use of the `HTimer` class.
