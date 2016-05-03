@@ -79,7 +79,7 @@ Config file is `config.yml` in the `~/.jruby_art folder` so it can co-exist with
 {% highlight yaml %}
 # Example YAML configuration file for jruby_art on linux (debian etc)
 PROCESSING_ROOT: /home/tux/processing-3.0.2
-# important sketch_book path may be different for processing-3.0
+# important sketch_book path may be different for processing-3.0+
 sketchbook_path: /home/tux/sketchbook 
 {% endhighlight %}
 
