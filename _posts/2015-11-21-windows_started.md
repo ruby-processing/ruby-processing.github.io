@@ -19,7 +19,7 @@ Since the project began in 2001, it's been helping teach people to program in a 
 
 In 2009, Jeremy Ashkenas (aka jashkenas, creator of Backbone.JS, Underscore.JS, and Coffeescript), published the original [ruby-processing gem][gem]. It wraps Processing in a shim that makes it even easier to get started if you know Ruby. It has been since updated to use processing-2.2.1 by Martin Prout (final version using jruby-1.7.24 corresponding to ruby-1.9.3 syntax), NB: no more releases are expected, and ruby-processing is not compatible with processing-3.0+.
 
-In 2015, Martin Prout (aka monkstone) published the [JRubyArt gem][jrubyart], loosely based on the original ruby-processing, but updated to use processing-3.0+ and jruby-9.0.5.0+ (ruby-2.2 syntax)
+In 2015, Martin Prout (aka monkstone) published the [JRubyArt gem][jrubyart], loosely based on the original ruby-processing, but updated to use processing-3.0+ and jruby-9.1.0.0+ (ruby-2.2 syntax)
 
 ### Why JRubyArt?
 
@@ -35,9 +35,9 @@ Why was ruby-processing not updated to use processing3.0+? The [major changes][c
 
 ### Setup
 
-Setting JRubyArt for the first time, can seem a bit involved (especially if you are addicted to rvm or rbenv). The JRubyArt gem relies on JRuby-9.0.5.0+, Processing-3.0.2, and a handful of other dependencies. Here's how to get them all installed and working on Windows.
+Setting JRubyArt for the first time, can seem a bit involved (especially if you are addicted to rvm or rbenv). The JRubyArt gem relies on JRuby-9.1.0.0+, Processing-3.0.2, and a handful of other dependencies. Here's how to get them all installed and working on Windows.
 
-Install wget, Oracle java (1.8.0_74+), and some version of ruby-2.2+ preferably jruby-9.0.5.0.
+Install wget, Oracle java (1.8.0_74+), and some version of ruby-2.2+ preferably jruby-9.1.0.0.
 
 ### Processing
 
@@ -76,7 +76,7 @@ sketchbook: "C:/Users/USER/Documents/Processing" # adjust to suit your install
 # JRUBY: false # uncomment to use jruby-complete by default especially if you haven't installed jruby
 {% endhighlight %}
 
-If you can/are using rvm or rbenv switch to using jruby-9.0.5.0+ then
+If you can/are using rvm or rbenv switch to using jruby-9.1.0.0+ then
 
 {% highlight bash %}
 gem install jruby_art
