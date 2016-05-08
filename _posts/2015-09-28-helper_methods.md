@@ -21,6 +21,20 @@ color(0, 0, 255, 100)  # blue with alpha value 100
 {% endhighlight %}
 Example Usages: [Creating][color], [Blend Color][blend_color]
 
+### hsb_color method
+A convenience method that returns a 'color' int for processing for `hsb` input, where hue, saturation and brightness are in range `0..1.0`
+{% highlight ruby %}
+hsb_color(hue, sat, bright) # where args are ruby float
+{% endhighlight %}
+
+### web_to_color_array method
+A convenience method that converts an array of web color strings to and array of 'color' int. Particularly useful when working with the Joshua Davis Processing-HYPE library.
+{% highlight ruby %}
+WEB = %w(#CC6600 #CC9900 #FFFFFF).freeze
+web_to_color_array(WEB)
+# output = [-3381760, -3368704, -1]
+{% endhighlight %}
+
 ### map1d method
 A replacement for processings map function, maps val (range1) to range2 using a linear transform.
 {% highlight ruby %}
