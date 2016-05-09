@@ -36,7 +36,7 @@ Why was ruby-processing not updated to use processing3.0+? The [major changes][c
 
 ### Setup
 
-Setting JRubyArt for the first time, can seem a bit involved (especially if you are addicted to rvm or rbenv). The JRubyArt gem relies on JRuby-9.1.0.0+, Processing-3.0.1, and a handful of other dependencies. Here's how to get them all installed and working on linux.
+Setting JRubyArt for the first time, can seem a bit involved (especially if you are addicted to rvm or rbenv). The JRubyArt gem relies on JRuby-9.1.0.0+, Processing-3.0.2+, and a handful of other dependencies. Here's how to get them all installed and working on linux.
 
 You will likely have wget installed, install latest 0racle jdk-8, and some version of ruby-2.2+ preferably jruby-9.1.0.0. If your distro does not offer a sufficiently up to date version of java install Oracle version in `/opt` as suggested for jruby and create appropriate links (use `update-alternatives` for a debian based distro).
 
@@ -49,7 +49,7 @@ sudo pacman -S processing # installs processing-3.0.2
 
 Otherwise you can check to see what platforms are officially supported [here][platforms].
 
-Download Processing-3.0.2+ from the [official website][official] and install, prefer to install in say `~/processing-3.0.2`, that way you can keep processing-2.2.1 (or earlier version of processing), which you may find useful.  When you're done, make sure to take note of the directory you installed the app to complete the configuration. 
+Download Processing-3.1 from the [official website][official] and install, prefer to install in say `~/processing-3.1`, that way you can keep processing-2.2.1 (or earlier version of processing), which you may find useful.  When you're done, make sure to take note of the directory you installed the app to complete the configuration. 
 
 __Finishing up__
 
@@ -78,7 +78,7 @@ Config file is `config.yml` in the `~/.jruby_art folder` so it can co-exist with
 
 {% highlight yaml %}
 # Example YAML configuration file for jruby_art on linux (debian etc)
-PROCESSING_ROOT: /home/tux/processing-3.0.2
+PROCESSING_ROOT: /home/tux/processing-3.1
 # important sketch_book path may be different for processing-3.0+
 sketchbook_path: /home/tux/sketchbook 
 {% endhighlight %}
