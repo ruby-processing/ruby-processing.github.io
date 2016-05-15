@@ -24,6 +24,10 @@ In this special one off release, we feature [example][] JRubyArt sketches using 
 5. [3D Orbiter](http://monkstone.github.io/jruby_art/update/2016/04/23/orbiter.html)
 
    This sketch features use of the `HBundle`, `HOrbiter3D` and `HSphere` classes.
+   
+6. [Random Trigger](https://monkstone.github.io/jruby_art/update/2016/05/15/random_trigger.html)
+   
+   This sketch features a callback on the `HRandomTrigger` class from the hype library.  Also includes a guide to using of the new `web_to_color_array` method to create a hash palette from web-color strings.
 
 [example]:https://github.com/ruby-processing/samples4ruby-processing3/tree/master/external_library/java/hype
 [Hype processing framework]:http://www.hypeframework.org/
