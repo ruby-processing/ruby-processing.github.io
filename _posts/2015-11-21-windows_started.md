@@ -35,7 +35,7 @@ Why was ruby-processing not updated to use processing3.0+? The [major changes][c
 
 ### Setup
 
-Setting JRubyArt for the first time, can seem a bit involved (especially if you are addicted to rvm or rbenv). The JRubyArt gem relies on JRuby-9.1.0.0+, Processing-3.0.2+, and a handful of other dependencies. Here's how to get them all installed and working on Windows.
+Setting JRubyArt for the first time, can seem a bit involved (especially if you are addicted to rvm or rbenv). The JRubyArt gem relies on JRuby-9.1.0.0+, Processing-3.1.1, and a handful of other dependencies. Here's how to get them all installed and working on Windows.
 
 Install wget, Oracle java (1.8.0.92+), and some version of ruby-2.2+ preferably jruby-9.1.0.0.
 
@@ -70,7 +70,7 @@ Config file is `config.yml` in the `~/.jruby_art folder` so it can co-exist with
 
 {% highlight yaml %}
 # Example YAML configuration file for jruby_art on Windows
-# K9_ROOT: "C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/jruby_art-1.0.7" # should not be necessary
+# K9_ROOT: "C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/jruby_art-1.0.8" # should not be necessary
 PROCESSING_ROOT: "C:/Java/Processing" # just a suggestion
 sketchbook: "C:/Users/USER/Documents/Processing" # adjust to suit your install
 # JRUBY: false # uncomment to use jruby-complete by default especially if you haven't installed jruby
