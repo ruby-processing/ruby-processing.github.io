@@ -55,7 +55,7 @@ Some variables that you might expect to find under their Processing names are av
 
 Because of this method madness, `Processing::App` has a convenience method for searching through them. `find_method('ellipse')` will return a list of the method names that may match what you're looking for: 'ellipse', 'ellipseMode', and 'ellipse_mode'.
 
-Also prefer [`Vec2D`][vec2] and [`Vec3D`][vec3] to [`PVector`][pvector] follow links for reference.
+Also prefer [`Vec2D`][vec2] and [`Vec3D`][vec3] to [`PVector`][pvector] follow links for reference. Also you can/should use `data_path` to wrap filenames (JRubyArt uses ruby to access the absolute_path of files in the sketch data folder, this avoids the file permission issues of the vanilla-processing method).
 
 [api]:https://processing.org/reference/index.html
 [vec2]:{{ site.url }}/classes/vec2d/

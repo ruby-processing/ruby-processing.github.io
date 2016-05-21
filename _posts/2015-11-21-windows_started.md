@@ -19,7 +19,7 @@ Since the project began in 2001, it's been helping teach people to program in a 
 
 In 2009, Jeremy Ashkenas (aka jashkenas, creator of Backbone.JS, Underscore.JS, and Coffeescript), published the original [ruby-processing gem][gem]. It wraps Processing in a shim that makes it even easier to get started if you know Ruby. It has been since updated to use processing-2.2.1 by Martin Prout (final version using jruby-1.7.24 corresponding to ruby-1.9.3 syntax), NB: no more releases are expected, and ruby-processing is not compatible with processing-3.0+.
 
-In 2015, Martin Prout (aka monkstone) published the [JRubyArt gem][jrubyart], loosely based on the original ruby-processing, but updated to use processing-3.0+ and jruby-9.1.0.0+ (ruby-2.2 syntax)
+In 2015, Martin Prout (aka monkstone) published the [JRubyArt gem][jrubyart], loosely based on the original ruby-processing, but updated to use processing-3.0+ and jruby-9.1.1.0+ (ruby-2.2 syntax)
 
 ### Why JRubyArt?
 
@@ -35,14 +35,14 @@ Why was ruby-processing not updated to use processing3.0+? The [major changes][c
 
 ### Setup
 
-Setting JRubyArt for the first time, can seem a bit involved (especially if you are addicted to rvm or rbenv). The JRubyArt gem relies on JRuby-9.1.0.0+, Processing-3.1.1, and a handful of other dependencies. Here's how to get them all installed and working on Windows.
+Setting JRubyArt for the first time, can seem a bit involved (especially if you are addicted to rvm or rbenv). The JRubyArt gem relies on JRuby-9.1.1.0+, Processing-3.1.1, and a handful of other dependencies. Here's how to get them all installed and working on Windows.
 
-Install wget, Oracle java (1.8.0.92+), and some version of ruby-2.2+ preferably jruby-9.1.0.0.
+Install wget, Oracle java (1.8.0.92+), and some version of ruby-2.2+ preferably jruby-9.1.1.0.
 
 ### Processing
 
 You can check to see what platforms are supported [here][platforms].
-Download Processing-3.1 from the [official website][official] and install, prefer to install in say `C:/Java/Processing` ie folders without special characters or spaces.  When you're done, make sure to take note of the directory you installed the app to complete the configuration. 
+Download Processing-3.1.1 from the [official website][official] and install, prefer to install in say `C:/Java/Processing` ie folders without special characters or spaces.  When you're done, make sure to take note of the directory you installed the app to complete the configuration. 
 
 __Finishing up__
 
@@ -70,13 +70,13 @@ Config file is `config.yml` in the `~/.jruby_art folder` so it can co-exist with
 
 {% highlight yaml %}
 # Example YAML configuration file for jruby_art on Windows
-# K9_ROOT: "C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/jruby_art-1.0.8" # should not be necessary
+# K9_ROOT: "C:/Ruby22-x64/lib/ruby/gems/2.3.0/gems/jruby_art-1.1.0" # should not be necessary
 PROCESSING_ROOT: "C:/Java/Processing" # just a suggestion
 sketchbook: "C:/Users/USER/Documents/Processing" # adjust to suit your install
 # JRUBY: false # uncomment to use jruby-complete by default especially if you haven't installed jruby
 {% endhighlight %}
 
-If you can/are using rvm or rbenv switch to using jruby-9.1.0.0+ then
+If you can/are using rvm or rbenv switch to using jruby-9.1.1.0+ then
 
 {% highlight bash %}
 gem install jruby_art
@@ -111,20 +111,15 @@ k9 setup unpack_samples # downloads and unpacks samples requires wget
 
 To run a bunch of the samples as a demo:-
 
-{% highlight bash %}
-cd ~/k9_samples
-rake # autoruns demo sketches sequentially (random order per folder)
-{% endhighlight %}
-
-More selectively run per folder or individual sketches:-
+cd to say contributed folder (containing a Rakefile) and run `rake` see below
 
 {% highlight bash %}
 cd ~/k9_samples/contributed # for example
 rake # autoruns files in contributed folder
 k9 run jwishy.rb # run the JWishy sketch, using an installed jruby
 cd ~/k9_samples/processing_app/topics/shaders
-rake # autoruns shader sketches
-k9 --nojruby run monjori.rb # run the Monjori sketch with jruby-complete
+rake # autoruns shader sketches 
+k9 run monjori.rb # run the Monjori sketch since jruby_art-1.1.0
 {% endhighlight %}
 
 ### Creating your own sketch
