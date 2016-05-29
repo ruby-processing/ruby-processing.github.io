@@ -28,6 +28,18 @@ In this special one off release, we feature [example][] JRubyArt sketches using 
 6. [Random Trigger](https://monkstone.github.io/jruby_art/update/2016/05/15/random_trigger.html)
    
    This sketch features a callback on the `HRandomTrigger` class from the hype library.  Also includes a guide to using of the new `web_to_color_array` method to create a hash palette from web-color strings.
+   
+7. [A Grid Layout Sketch](http://monkstone.github.io/jruby_art/update/2016/05/27/grid_layout.html) 
+
+   A simpler sketch that manages without callbacks.
+
+8. [A Hype Attractor Sketch](http://monkstone.github.io/jruby_art/update/2016/05/26/attractor.html)
+
+   Yet another sketch that shows how you can use the magic of JRuby to replace an anonymous callback with a block.
+
+9. [A Hype Swarm Sketch](http://monkstone.github.io/jruby_art/update/2016/05/24/hype_swarm.html)
+
+   This sketch features the use of a ruby `proc` to implement a callback (in place of a ruby `lambda`) see `on_anim`
 
 [example]:https://github.com/ruby-processing/samples4ruby-processing3/tree/master/external_library/java/hype
 [Hype processing framework]:http://www.hypeframework.org/
