@@ -6,11 +6,11 @@ categories: jruby_art update
 permalink: /linux_started/
 ---
 
-### Getting Started With JRubyArt (stolen from [Ben Lewis][ben])
+### Getting Started With JRubyArt (stolen from [Ben Lewis][ben]) ###
 
 If you love to code because it is a creative process, then you should give JRubyArt a try because it can be used to [create music][sound], art, animations, [videos][video] and much more. Also since it is based on the latest [Processing][processing] you can access a vast range of libraries to make the difficult things easier.
 
-### What Is Processing?
+### What Is Processing? ###
 
 Processing is a simple language, based on Java, that you can use to create digital graphics. It's easy to learn, fun to use, and has an amazing online community comprised of programmers, visual artists, musicians, and interdisciplinary artists of all kinds.
 
@@ -20,9 +20,9 @@ Since the project began in 2001, it's been helping teach people to program in a 
 
 In 2009, Jeremy Ashkenas (aka jashkenas, creator of Backbone.JS, Underscore.JS, and Coffeescript), published the original [ruby-processing gem][gem]. It wraps Processing in a shim that makes it even easier to get started if you know Ruby. It has been since updated to use processing-2.2.1 by Martin Prout (final version using jruby-1.7.24 corresponding to ruby-1.9.3 syntax), NB: no more releases are expected, and ruby-processing is not compatible with processing-3.0+.
 
-In 2015, Martin Prout (aka monkstone) published the [JRubyArt gem][jrubyart], loosely based on the original ruby-processing, but updated to use processing-3.0+ and jruby-9.1.1.0+ (ruby-2.2 syntax)
+In 2015, Martin Prout (aka monkstone) published the [JRubyArt gem][jrubyart], loosely based on the original ruby-processing, but updated to use processing-3.0+ and jruby-9.1.2.0+ (ruby-2.2 syntax)
 
-### Why JRubyArt?
+### Why JRubyArt? ###
 
 Since Processing already comes wrapped in an easy-to-use package, you may ask: "why should I bother with JRubyArt?"
 
@@ -32,92 +32,100 @@ Additionally, you don't have to declare types, voids, or understand the differen
 
 Although there are some drawbacks to using the Ruby version Processing (slower start up time, and sometimes performance), having Ruby's API available to translate your ideas into sketches more than makes up for them.
 
-Why was ruby-processing not updated to use processing3.0+? The [major changes][changes] between processing-2.2.1 and processing-3.0 are not backward compatible. Furthermore since JRubyArt was designed to use jruby-9.0.0.0 from the outset, it makes use of the more literate ruby-2.2 syntax (although the original ruby-processing will run with jruby-9.1.1.0, the examples and the ruby-processing library are all based on ruby-1.9.3 syntax).
+Why was ruby-processing not updated to use processing3.0+? The [major changes][changes] between processing-2.2.1 and processing-3.0 are not backward compatible. Furthermore since JRubyArt was designed to use jruby-9.0.0.0+ from the outset, it makes use of the more literate ruby-2.2 syntax (although the original ruby-processing will run with jruby-9.1.2.0, the examples and the ruby-processing library are all based on ruby-1.9.3 syntax).
 
-### Setup
+### Pure JRuby Setup Archlinux ###
 
-Setting JRubyArt for the first time, can seem a bit involved (especially if you are addicted to rvm or rbenv). The JRubyArt gem relies on JRuby-9.1.1.0+, Processing-3.1.1, and a handful of other dependencies. Here's how to get them all installed and working on linux.
+Install Software as required:- 
 
-You will likely have wget installed, install latest 0racle jdk-8, and some version of ruby-2.2+ preferably jruby-9.1.1.0. If your distro does not offer a sufficiently up to date version of java install Oracle version in `/opt` as suggested for jruby and create appropriate links (use `update-alternatives` for a debian based distro).
-
-### Processing
-
-If you are on ArchLinux 
 {% highlight bash %}
-sudo pacman -S processing # installs processing-3.1
+sudo pacman -S jdk8-openjdk # installs openjdk
+sudo pacman -S java-openjfx # installs openjfx
+sudo pacman -S jruby # installs jruby
+sudo pacman -S processing # installs processing-3.1.1  (community)
+{% endhighlight %}
+
+Configure in `~/.jruby_art/config.yml`:-
+{% highlight bash %}
+PROCESSING_ROOT: /usr/share/processing
+sketchbook_path: /home/tux/sketchbook
+MAX_WATCH: 30
+JRUBY: 'true'
+{% endhighlight %}
+
+Install JRubyArt 
+{% highlight bash %}
+jruby -S gem install jruby_art
+jruby -S gem install toxiclibs # optional
+jruby -S gem install pbox2d # optional
+jruby -S gem install geomerative # optional
+{% endhighlight %}
+
+Install vanilla processing libraries from processing-3.1.1 ide (recomended audio, video)
+
+### Pure JRuby Setup Debian (Mint, Ubuntu) ###
+
+Download and install latest Oracle jdk (in the `/opt` folder makes sense)
+
+Use `update-alternatives` to install and maintain configuration eg for java:-
+{% highlight bash %}
+sudo update-alternatives --install /usr/bin/java java /opt/jdk1.8.0_92/bin/java 100
+sudo update-alternatives --config java # to configure if required
+{% endhighlight %}
+
+Download and install latest jruby (in the `/opt` folder makes sense)
+
+Use `update-alternatives` to install and maintain configuration eg for java:-
+{% highlight bash %}
+sudo update-alternatives --install /usr/bin/jruby jruby /opt/jruby-9.1.2.0/bin/jruby 100
+sudo update-alternatives --config jruby # to configure if required
+{% endhighlight %}
+
+Configure in `~/.jruby_art/config.yml`:-
+{% highlight bash %}
+PROCESSING_ROOT: /home/tux/processing-3.1.1 # `substitute` user for `tux`
+sketchbook_path: /home/tux/sketchbook
+MAX_WATCH: 30
+JRUBY: 'true'
 {% endhighlight %}
 
 Otherwise you can check to see what platforms are officially supported [here][platforms].
 
 Download Processing-3.1.1 from the [official website][official] and install, prefer to install in say `~/processing-3.1.1`, that way you can keep processing-2.2.1 (or earlier version of processing), which you may find useful.  When you're done, make sure to take note of the directory you installed the app to complete the configuration. 
 
+Complete the install as for Archlinux (make sure `k9` is on your path or use `jruby -S k9`)
+
+### Alternative JRuby-Complete Setup Debian (Mint, Ubuntu) ###
+
+Download and install latest Oracle jdk (in the `/opt` folder makes sense)
+
+Use `update-alternatives` to install and maintain configuration eg for java:-
+{% highlight bash %}
+sudo update-alternatives --install /usr/bin/java java /opt/jdk1.8.0_92/bin/java 100
+sudo update-alternatives --config java # to configure if required
+{% endhighlight %}
+
+Install MRI ruby (must be at least ruby-2.2)
+
+Download Processing-3.1.1 from the [official website][official] and install, prefer to install in say `~/processing-3.1.1`.  When you're done, make sure to take note of the directory you installed the app to complete the configuration see below. 
+
+Configure in `~/.jruby_art/config.yml`:-
+{% highlight bash %}
+PROCESSING_ROOT: /home/tux/processing-3.1.1 # `substitute` user for `tux`
+sketchbook_path: /home/tux/sketchbook
+MAX_WATCH: 30
+JRUBY: 'false'
+{% endhighlight %}
+
+using `rvm` or `rebenv` using ruby2.2+
+{% highlight bash %}
+gem install jruby_art
+k9 setup install # installs jruby-complete
+{% endhighlight %}
+
 __Finishing up__
 
-Fire up processing, and use the processing ide to install the sound and video libraries as these are no longer included in the download (but you will surely want them):-
-
-`Sketch/Import Library/Add Library/Video` _ide menu_
-
-### JRuby
-
-For ArchLinux only:-
-
-{% highlight bash %}
-sudo pacman -S jruby # installs jruby-9.1.1.0
-sudo pacman -S ruby # installs up to date MRI ruby
-{% endhighlight %}
-
-For debian (ubuntu/mint etc) distro installers are hopelessly out of date (even for MRI ruby), my preference is to download and install jruby (and MRI ruby) to the `/opt` folder and make use of the excellent update-alternatives tool to create symbolic links to the relevant binaries (this is much more robust than rvm or rbenv). Use rvm or better rbenv if you must, but be aware they can be particulary troublesome on linux (and are completely incompatible, and difficult to get rid of especially rvm).
-
-### JRubyArt
-
-Configuration:-
-
-JRubyArt needs to know where you've installed processing, where your processing sketchbook lives (for the video and audio libraries etc), and whether you've done a system/user install of jruby.
-
-Config file is `config.yml` in the `~/.jruby_art folder` so it can co-exist with a ruby-processing install (~/.rp5rc), it is advisable to have separate folders for processing-3.0 and processing-2.2.1 sketchbooks.
-
-{% highlight yaml %}
-# Example YAML configuration file for jruby_art on linux (debian etc)
-PROCESSING_ROOT: /home/tux/processing-3.1.1
-# important sketch_book path may be different for processing-3.0+
-sketchbook_path: /home/tux/sketchbook 
-{% endhighlight %}
-
-Alternative but probably only for ArchLinux 
-
-{% highlight yaml %}
-# Example YAML configuration file for jruby_art on ArchLinux 
-PROCESSING_ROOT: /usr/share/linux
-# important sketch_book path may be different for processing-3.0
-sketchbook_path: /home/tux/sketchbook 
-{% endhighlight %}
-
-If you can/are using rvm or rbenv switch to using jruby-9.1.1.0+ then
-
-{% highlight bash %}
-gem install jruby_art
-{% endhighlight %}
-
-if you are brave (or sensible) and have done an independent jruby install
-
-{% highlight bash %}
-jruby -S gem install jruby_art # then install other gems eg toxiclibs the same way
-{% endhighlight %}
-
-but you might find regular MRI gem install works (also tends to be quicker)
-
-{% highlight bash %}
-gem install jruby_art
-{% endhighlight %}
-
-After installing the the gem you need to download and install jruby-complete,
-this is not included in the gem, because it would make it too big, however providing you've got wget installed all you need to do is:-
-
-{% highlight bash %}
-k9 setup install # downloads and installs jruby-complete requires wget
-{% endhighlight %}
-
-While you are at it you should install the samples
+Install the samples
  
 {% highlight bash %}
 k9 setup unpack_samples # downloads and unpacks samples requires wget
