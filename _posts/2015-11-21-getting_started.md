@@ -107,6 +107,8 @@ sudo update-alternatives --config java # to configure if required
 
 Install MRI ruby (must be at least ruby-2.2)
 
+https://www.ruby-lang.org/en/documentation/installation/ (NB: most distros are hopelessly out of data)
+
 Download Processing-3.1.1 from the [official website][official] and install, prefer to install in say `~/processing-3.1.1`.  When you're done, make sure to take note of the directory you installed the app to complete the configuration see below. 
 
 Configure in `~/.jruby_art/config.yml`:-
@@ -117,7 +119,7 @@ MAX_WATCH: 30
 JRUBY: 'false'
 {% endhighlight %}
 
-using `rvm` or `rebenv` using ruby2.2+
+If using `rvm` or `rbenv` make sure you are using ruby2.2+
 {% highlight bash %}
 gem install jruby_art
 k9 setup install # installs jruby-complete

@@ -26,7 +26,8 @@ def settings
 end
 {% endhighlight %}
 
-Alternative Examples: [3D Menger][menger], [Retained Shape][shape]
+Alternative Examples: [3D Menger][menger], [Retained Shape][shape], [Constrained ArcBall][constrain]
 
 [menger]: https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/library/vecmath/vec3d/retained_menger.rb
 [shape]: https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/library/vecmath/arcball/arcball_shape.rb
+[constrain]: https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/library/vecmath/arcball/constrain.rb
