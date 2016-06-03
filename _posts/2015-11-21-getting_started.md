@@ -186,5 +186,5 @@ Read more about using the [processing api here][api]
 [official]:https://processing.org/download/?processing
 [platforms]:https://github.com/processing/processing/wiki/Supported-Platforms
 [editor]:{{ site.url }}/editors/
-[sound]:http://monkstone.github.io/_posts/minim/
-[video]:http://monkstone.github.io/_posts/
+[sound]:http://monkstone.github.io/_posts/minim
+[video]:http://monkstone.github.io/jruby_art/update/2015/10/13/manipulate_capture.html
