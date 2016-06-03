@@ -65,7 +65,15 @@ Install vanilla processing libraries from processing-3.1.1 ide (recomended audio
 
 ### Pure JRuby Setup Debian (Mint, Ubuntu) ###
 
-Download and install latest Oracle jdk (in the `/opt` folder makes sense)
+The simplest way to install oracle java (but with less control over version etc)
+
+{% highlight bash %}
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+{% endhighlight %}
+
+Alternative method (that puts you in control), download and install latest Oracle jdk (in the `/opt` folder makes sense)
 
 Use `update-alternatives` to install and maintain configuration eg for java:-
 {% highlight bash %}
@@ -97,13 +105,7 @@ Complete the install as for Archlinux (make sure `k9` is on your path or use `jr
 
 ### Alternative JRuby-Complete Setup Debian (Mint, Ubuntu) ###
 
-Download and install latest Oracle jdk (in the `/opt` folder makes sense)
-
-Use `update-alternatives` to install and maintain configuration eg for java:-
-{% highlight bash %}
-sudo update-alternatives --install /usr/bin/java java /opt/jdk1.8.0_92/bin/java 100
-sudo update-alternatives --config java # to configure if required
-{% endhighlight %}
+Download and install latest Oracle jdk as above.
 
 Install MRI ruby (must be at least ruby-2.2)
 
@@ -124,6 +126,8 @@ If using `rvm` or `rbenv` make sure you are using ruby2.2+
 gem install jruby_art
 k9 setup install # installs jruby-complete
 {% endhighlight %}
+
+NB: you may find that you are unable to use gems in your sketches unless you have used jruby to install them.
 
 __Finishing up__
 
