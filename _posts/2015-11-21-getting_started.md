@@ -158,7 +158,7 @@ vim fred.rb # other editors are available
 :!k9 run % # from vim runs the sketch 
 {% endhighlight %}
 
-You may want to try other [development environments][editor] eg emacs or even netbeans. Needless to say ArchLinux can install these for you, but both need a bit of post install love get the best out of them (vim in the main just works, and is super light weight).
+You may want to try other [development environments][editor] eg emacs or even netbeans. Needless to say your distro can install these for you, but both need a bit of post install love get the best out of them (vim in the main just works, and is super light weight).
 
 {% highlight ruby %}
 def setup
@@ -186,5 +186,5 @@ Read more about using the [processing api here][api]
 [official]:https://processing.org/download/?processing
 [platforms]:https://github.com/processing/processing/wiki/Supported-Platforms
 [editor]:{{ site.url }}/editors/
-[sound]:http://monkstone.github.io/_posts/sound/
+[sound]:http://monkstone.github.io/_posts/minim/
 [video]:http://monkstone.github.io/_posts/
