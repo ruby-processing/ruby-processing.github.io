@@ -40,6 +40,10 @@ In this special one off release, we feature [example][] JRubyArt sketches using 
 9. [A Hype Swarm Sketch](http://monkstone.github.io/jruby_art/update/2016/05/24/hype_swarm.html)
 
    This sketch features the use of a ruby `proc` to implement a callback (in place of a ruby `lambda`) see `on_anim`
+   
+10. [A Hype Colorist Sketch](http://monkstone.github.io/jruby_art/update/2016/06/08/colorist.html)
+
+    Using hype utilities to pixellate an image.
 
 [example]:https://github.com/ruby-processing/samples4ruby-processing3/tree/master/external_library/java/hype
 [Hype processing framework]:http://www.hypeframework.org/
