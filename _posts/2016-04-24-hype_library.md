@@ -6,7 +6,7 @@ categories: jruby_art update
 keywords: library, java, framework, hype, processing
 
 ---
-In this special one off release, we feature [example][] JRubyArt sketches using the [Hype processing framework][] by Joshua Davis. For write ups see the blog entry links below.
+Here is an index of my blogposts about using the [Hype processing framework][] by Joshua Davis in JRubyArt. The code [examples][] are included with the JRubyArt examples.
 
 1. [A Basic Sketch](http://monkstone.github.io/jruby_art/update/2016/04/18/hype.html)
 
@@ -45,6 +45,6 @@ In this special one off release, we feature [example][] JRubyArt sketches using 
 
     Using hype utilities to pixellate an image.
 
-[example]:https://github.com/ruby-processing/samples4ruby-processing3/tree/master/external_library/java/hype
+[examples]:https://github.com/ruby-processing/JRubyArt-examples/blob/master/external_library/java/hype
 [Hype processing framework]:http://www.hypeframework.org/
 [color]: {{ site.url }}/alternatives/
