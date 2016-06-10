@@ -45,4 +45,4 @@ Vec2D.new(a, b) # where a and b are both floats
 
 Example Usages: [Examples][Vec2D]
 
-[Vec2D]: https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/library/vecmath/vec2d/
+[Vec2D]: https://github.com/ruby-processing/JRubyArt-examples/blob/master/processing_app/library/vecmath/vec2d/

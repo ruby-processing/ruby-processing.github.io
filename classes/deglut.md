@@ -16,5 +16,5 @@ Deglut.cos(deg)
 
 Example Usages: [Analog Clock][clock], [Function Grapher][grapher]
 
-[clock]: https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/library/fastmath/clock.rb
-[grapher]: https://github.com/ruby-processing/samples4ruby-processing3/blob/master/contributed/grapher.rb
+[clock]: https://github.com/ruby-processing/JRubyArt-examples/blob/master/processing_app/library/fastmath/clock.rb
+[grapher]: https://github.com/ruby-processing/JRubyArt-examples/blob/master/contributed/grapher.rb

@@ -25,4 +25,4 @@ contains?(vec)          # returns true/false if box contains point at vec
 
 Example: [Constrained Box][example]
 
-[example]: https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/library/vecmath/vec2d/aabb_test.rb
+[example]: https://github.com/ruby-processing/JRubyArt-examples/blob/master/processing_app/library/vecmath/vec2d/aabb_test.rb

@@ -44,5 +44,5 @@ Vec3D.new(a, b, c) # where a, b, and c are all floats
 
 Example Usages: [Examples][Vec3D]
 
-[Vec3D]: https://github.com/ruby-processing/samples4ruby-processing3/blob/master/processing_app/library/vecmath/vec3d/
+[Vec3D]: https://github.com/ruby-processing/JRubyArt-examples/blob/master/processing_app/library/vecmath/vec3d/
 
