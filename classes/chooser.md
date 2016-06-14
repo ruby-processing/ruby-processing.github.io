@@ -50,3 +50,7 @@ def mouse_clicked
   select_input('select an image', 'file_selected')
 end
 {% endhighlight %}
+
+See more [examples here][examples]
+
+[examples]:https://github.com/ruby-processing/JRubyArt-examples/tree/master/processing_app/library/file_chooser
