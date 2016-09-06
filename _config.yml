@@ -1,10 +1,9 @@
 # Site settings
 port: 4000
-title: JRubyArt (Code as Art)
+title: The Ruby-Processing Group Site
 email: mamba2928@yahoo.co.uk
 description: > # this means to ignore newlines until "baseurl:"
-  JRubyArt is a ruby wrapper for processing-3.0.2+ For processing-2.2.1, use
-  ruby-processing.
+  This the home for the ruby-processing group.
 baseurl: "" # the subpath of your site, e.g. /blog
 regenerate: true
 urls:
@@ -13,7 +12,6 @@ urls:
   github: https://github.com/ruby-processing/jruby_art
 twitter_username: monkstoneT
 github_username:  monkstone
-include: [classes]
 syntax-highlighting:
   enabled: true
   css: syntax.css        

@@ -1,2 +1,5 @@
 # ruby-processing.github.io
-JRubyArt Website source. Help Welcome!
+
+### The Ruby-Processing Group Website source. ###
+
+Contributions Welcome!
