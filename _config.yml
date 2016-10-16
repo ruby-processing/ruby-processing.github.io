@@ -18,10 +18,16 @@ collections:
     permalink: /welcome/:path/
   projects:
       output: true
-      permalink: /projects/:path/  
-  hype:
+      permalink: /projects/:path/
+  testing:
     output: true
-    permalink: /hype/:path/
+    permalink: /testing/:path/
+  building:
+    output: true
+    permalink: /building/:path/
+  books:
+    output: true
+    permalink: /books/:path/
 syntax-highlighting:
   enabled: true
   css: syntax.css
