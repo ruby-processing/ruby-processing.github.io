@@ -25,9 +25,6 @@ collections:
   building:
     output: true
     permalink: /building/:path/
-  books:
-    output: true
-    permalink: /books/:path/
 syntax-highlighting:
   enabled: true
   css: syntax.css
