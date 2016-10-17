@@ -16,7 +16,7 @@ Not forgetting the atom editor projects [atom-k9][atom-k9] and [language-jruby-a
 
  first degree was BSc hons Biochemistry from University of Surrey, I went on to specialize in xenobiotic metabolism (at first drugs, then industrial chemicals and pesticides).  I later studied for a computer science degree with the Open University (BSc hons 2:1 but insufficient specified modules to be a named degree), included some smalltalk but mainly java. Subsequently I dabbled a bit with C++, perl python, and even lisp, but got hooked on ruby, particulary ruby-processing. OS experience Windows-98 up to Windows-XP and mainly linux since 2004 (tried gentoo, fedora, even pardus) now using Archlinux and Mint (Debian). Since November 2012 I have been sole developer/maintainer of ruby-processing (_did update for processing-2.0_), and I have since developed JRubyArt and propane (_for processing-3.0+_) and ensured that jruby-9.0.0.0 (with support from jruby group) continued to work with ruby-processing, and its descendants.
 
- NB: I'm not in the market for a job, and only get involved with projects that interest me, currently I'm teaching myself javascript just to develop atom packges for JRubyArt / propane.
+ NB: I'm not in the market for a job, and only get involved with projects that interest me, currently I'm teaching myself javascript just to develop atom packages for JRubyArt / propane.
 
 [jruby_art]: https://ruby-processing.github.io/index.html
 [blog]:http://monkstone.github.io/

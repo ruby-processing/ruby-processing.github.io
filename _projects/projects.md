@@ -10,7 +10,7 @@ The natural successor to ruby-processing, for processing-3.2.1 and jruby-9.1.5.0
 
 ### propane ###
 
-An alternative ruby-processing implementation, for processing-3.2.1 and jruby-9.1.5.0, does not require vanilla processing install, does require jruby install.
+An alternative ruby-processing implementation, for processing-3.2.1 and jruby-9.1.5.0, does not require vanilla processing install, does require jruby install. Executable `jruby`.
 
 ### pbox2d ###
 
