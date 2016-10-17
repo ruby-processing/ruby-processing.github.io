@@ -9,7 +9,7 @@ In the spirit of [free software][free-sw], **everyone** is encouraged to help im
 Here are some ways *you* can contribute:
 
 * by reporting bugs
-* by suggesting/implementing new features ( _running sketches from the atom editor would be cool_ )
+* by suggesting/implementing new features ( _package export would be cool_ )
 * by writing or editing documentation ( _expert Windows users could help write install instructions_ )
 * by contributing examples ( _show your creativity, or translate someone elses masterpiece_ )
 * by refactoring examples to be more rubyfied
@@ -17,6 +17,7 @@ Here are some ways *you* can contribute:
 * by proselytizing JRubyArt (propane), we need more champions
 * by supporting [Processing.org][], nothing to do with us but we rely on them
 * by figuring out if we could replace swing with javafx for control_panel etc
+* contributing towards `atom-k9` and `language-jruby-art` packages for atom
 
 ### Submitting an Issue ###
 We use the [GitHub issue tracker][issues] to track bugs and features. Before
