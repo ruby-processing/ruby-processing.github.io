@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Building"
+title:  "Building ruby-processing projects"
 ---
 ### Tools of the Trade ###
 
