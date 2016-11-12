@@ -61,7 +61,7 @@ project 'hype' do
   jar 'processing.org:core:3.2.1' # latest available from maven central
 end
 ```
-You need maven 3.3.1+ installed, compile with
+Ideally you need apache-maven-3.3.9 installed (at least 3.3.1), to compile with
 
 ```bash
 mvn package # outputs into target folder
