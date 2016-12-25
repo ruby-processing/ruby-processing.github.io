@@ -14,7 +14,9 @@ background 0
 is a valid sketch (ie you can write `static` sketches in ruby). Like vanilla processing we wrap this code before it is run but unlike vanilla processing we don't use a preprocessor.
 
 What you can/should write (like a vanilla processing sketch) avoids much boilerplate.
+
 ### bare.rb ###
+
 ```ruby
 # load_library :my_library # jruby_art method
 # include_package 'org.package' # JRuby method
