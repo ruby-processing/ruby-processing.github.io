@@ -34,11 +34,13 @@ end
 ```
 
 When you run/watch this sketch using:-
+
 ```bash
 k9 -r bare.rb # run
 # or
 k9 -w bare.rb # watch
 ```
+
 It gets wrapped for you see below:-
 
 ```ruby
