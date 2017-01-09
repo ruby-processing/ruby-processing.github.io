@@ -37,7 +37,7 @@ This is the ruby polyglot version of `pom.xml`
 project 'hype' do
 
   model_version '4.0.0'
-  id 'hypeframework:hype:2.0.2-SNAPSHOT'
+  id 'hypeframework:hype:2.0.2'
   packaging 'jar'
 
   description 'A collection of classes that performs the heavy lifting for you by writing a minimal amount of code.'
@@ -58,7 +58,7 @@ project 'hype' do
   'maven.compiler.target' => '1.8',
   'polyglot.dump.pom' => 'pom.xml' )
 
-  jar 'processing.org:core:3.2.1' # latest available from maven central
+  jar 'processing.org:core:3.2.3' # latest available from maven central
 end
 ```
 Ideally you need apache-maven-3.3.9 installed (at least 3.3.1), to compile with
