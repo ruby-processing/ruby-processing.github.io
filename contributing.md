@@ -4,6 +4,7 @@ title: Contributing
 permalink: /contributing/
 ---
 ## Use your knowledge of ruby ##
+
 ### processing, java, javascript, coffeescript ###
 
 In the spirit of [free software][free-sw], **everyone** is encouraged to help improve this project.  It is very much a `ruby` project, we use github flavored jekyll to produce this content, and most other documentation. Many examples are virtually pure `ruby`, and we have even managed to wrap several `vanilla processing` (and other java libraries) as rubygems.  Improvements to the `atom` editor have made it editor of choice for ruby-processing projects (recently favoring `javascript` over `coffeescript`). We even use a `ruby` flavored build system for building `java` projects (includes `vecmath`, `pbox2d` and `toxiclibs`).
