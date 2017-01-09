@@ -6,7 +6,7 @@ keywords: propane, JRubyArt
 
 ## Understanding A JRubyArt Sketch ##
 
-Ruby-processing and now JRubyArt have both taken advantage of ruby language features to create `DSL` like experience when coding processing in ruby, to the extent that
+Ruby-processing and now JRubyArt have both taken advantage of ruby language features to create a `DSL` like experience when coding processing in ruby, to the extent that
 
 ```ruby
 background 0

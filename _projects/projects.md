@@ -22,7 +22,11 @@ Gem wrapper around [toxiclibs libraries][toxiclibs] for JRubyArt and propane
 
 ### geomerative ###
 
-Gem wrapper around [geomerative libraries][geomerative] for JRubyArt and propane
+Gem wrapper around [geomerative library][geomerative] for JRubyArt and propane
+
+### joonsrenderer ###
+
+Gem wrapper around [joonsrenderer library][joonsrenderer] for JRubyArt and propane, enables sunflow raytracing of sketches
 
 ### atom-k9 ###
 
@@ -37,3 +41,4 @@ The [language-jruby-art][language-jruby-art] provides syntax highlighting and sn
 [geomerative]:https://github.com/ruby-processing/geomerativegem
 [language-jruby-art]:https://github.com/ruby-processing/language-jruby-art
 [atom-k9]:https://github.com/ruby-processing/atom-k9
+[joonsrenderer]:https://github.com/ruby-processing/joonsrenderer
