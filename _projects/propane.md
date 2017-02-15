@@ -6,7 +6,7 @@ keywords: propane, JRubyArt
 
 ## Understanding A propane Sketch ##
 
-How you might write a propane sketch, including the `shebang` makes it easier to run the sketch using `script` in the `atom` editor
+How you might write a propane sketch, including the `shebang` makes it easier to run the sketch using `script` in the `atom` editor, but assumes you have jruby available at `/usr/bin/jruby` or more likely via symbolic link (yet another reason not to use `rvm` or `rbenv` since they futz with your environment).
 
 ### my_sketch.rb ###
 
