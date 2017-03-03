@@ -21,7 +21,8 @@ class MyApp < App::Propane
   def settings
     size 200, 200 # size 'mode' or fullscreen 'mode' goes here
     # pixel_density(2) # only for HiDpi screens
-    # smooth # useless unless you enter a figure 2, 4 or 8 (3 is default)
+    # smooth # useless unless you enter a figure 2, 3, 4 or 8
+    # for default renderer default is 3 for P2D and P3D it is 2
     # see https://processing.org/reference/smooth_.html
   end
 
