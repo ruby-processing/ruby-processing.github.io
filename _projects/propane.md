@@ -19,7 +19,10 @@ class MyApp < App::Propane
   # load_library :my_library # propane method
   # include_package 'org.package' # JRuby method
   def settings
-    size 200, 200 # since processing-3.0 size 'mode' go here
+    size 200, 200 # size 'mode' or fullscreen 'mode' goes here
+    # pixel_density(2) # only for HiDpi screens
+    # smooth # useless unless you enter a figure 2, 4 or 8 (3 is default)
+    # see https://processing.org/reference/smooth_.html
   end
 
   def setup
@@ -48,7 +51,8 @@ module Propane
     # load_library :my_library # propane method
 
     def settings
-      size 200, 200 # since processing-3.0 size 'mode' go here
+      size 200, 200 # size 'mode' go here
+
     end
 
     def setup
@@ -61,7 +65,7 @@ module Propane
   end  
 end
 
-Propane::MyApp.new
+# NB: If you use this explicit form need to use Propane::MyApp.new to run sketch
 ```
 
 See more at [propane github pages][github_pages]
