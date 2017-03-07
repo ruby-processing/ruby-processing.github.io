@@ -24,6 +24,10 @@ Gem wrapper around [toxiclibs libraries][toxiclibs] for JRubyArt and propane
 
 Gem wrapper around [geomerative library][geomerative] for JRubyArt and propane
 
+### ruby_wordcram ###
+
+Gem wrapper around [WordCram library][wordcram] for JRubyArt and propane, create word clouds in ruby.
+
 ### joonsrenderer ###
 
 Gem wrapper around [joonsrenderer library][joonsrenderer] for JRubyArt and propane, enables sunflow raytracing of sketches
@@ -47,3 +51,4 @@ The [language-jruby-art][language-jruby-art] provides syntax highlighting and sn
 [atom-k9]:https://github.com/ruby-processing/atom-k9
 [joonsrenderer]:https://github.com/ruby-processing/joonsrenderer
 [examples]:https://github.com/ruby-processing/filters4jruby_art/blob/master/README.md
+[wordcram]:http://wordcram.org/
