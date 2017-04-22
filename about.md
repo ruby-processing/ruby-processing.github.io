@@ -6,7 +6,7 @@ permalink: /about/
 ### The group ###
 The ruby-processing group exists to collect together projects that support creating and running processing sketches in ruby. It is also designed to hide the inevitably high [bus factor][bus] of what is an essentially __one man band__, but I am trying hard to make it otherwise (including evolving the code). You could play your part...
 
-There are two main projects [JRubyArt][jruby_art] and [propane][propane], the most evolved and tested of these is [JRubyArt][jruby_art], which is essentially an improved version of ruby-processing, that provides a ruby wrapper around the latest [vanilla processing][processing], it also depends on a vanilla processing install (but can be configured to not require a jruby install). [Propane][propane] is a configuration free, complete version of ruby-processing (_does not require installed vanilla processing_) that depends on an installed jruby (_is somewhat more experimental_).
+There are two main projects [JRubyArt][jruby_art] and [propane][propane], the most evolved and tested of these is [JRubyArt][jruby_art], which is essentially an improved version of ruby-processing, that provides a ruby wrapper around the latest [vanilla processing][processing], it also depends on a vanilla processing install (but can be configured to not require a jruby install). [Propane][propane] is a configuration free, complete version of ruby-processing (_does not require installed vanilla processing_) that depends on an installed jruby (_is slightly more experimental_).
 
 Other projects include the pbox2d gem (a gem wrapper around [jbox2d][jbox2d]), toxiclibs gem (a gem wrapper around [toxiclibs][toxiclibs]) and geomerative gem (a gem wrapper around [geomerative][geomerative]).
 
@@ -18,7 +18,7 @@ Not forgetting the atom editor projects [atom-k9][atom-k9] and [language-jruby-a
 
  NB: I'm not in the market for a job, and only get involved with projects that interest me, currently I'm learning javascript just to develop atom packages for JRubyArt / propane (but my heart is not in it, javascript is just horrible).
 
-[jruby_art]: https://ruby-processing.github.io/index.html
+[jruby_art]: https://ruby-processing.github.io/JRubyArt/
 [blog]:http://monkstone.github.io/
 [toxiclibs]:http://ruby-processing.github.io/toxicgem/
 [geomerative]:http://ruby-processing.github.io/geomerativegem/
