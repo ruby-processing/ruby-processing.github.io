@@ -6,11 +6,11 @@ keywords: projects, propane, JRubyArt, toxicgem, atom-k9, language-jruby-art, pb
 
 ### JRubyArt ###
 
-The natural successor to ruby-processing, for processing-3.3 and jruby-9.1.8.0, requires vanilla processing install. Executable `k9`. Can work without jruby install (using jruby-complete.jar).  Features a --watch (-w) mode, where sketch will reload on saved changes.  Supports `bare` sketches (like vanilla processing)
+The natural successor to ruby-processing, for processing-3.3.1 and jruby-9.1.8.0, requires vanilla processing install. Executable `k9`. Can work without jruby install (using jruby-complete.jar).  Features a --watch (-w) mode, where sketch will reload on saved changes.  Supports `bare` sketches (like vanilla processing)
 
 ### propane ###
 
-An alternative ruby-processing implementation, for processing-3.3 and jruby-9.1.8.0, does not require vanilla processing install, does require jruby install. Executable `jruby`.  Should be be easier to convert into an exportable app, no reliance on vanilla processing install. Only supports class wrapped sketches.
+An alternative ruby-processing implementation, for processing-3.3.1 and jruby-9.1.8.0, does not require vanilla processing install, does require jruby install. Executable `jruby`.  Should be be easier to convert into an exportable app, no reliance on vanilla processing install. Only supports class wrapped sketches.
 
 ### pbox2d ###
 
