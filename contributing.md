@@ -33,6 +33,14 @@ the bug, including your gem version, Ruby version, and operating system.
 1. [Fork the repository.][fork]
 2. [Submit a pull request.][pr]
 
+### Extend the JRubyArt / propane wikis ###
+
+This is the easiest way to get involved, see valuable contributions by [Carlos Rocha](https://github.com/MoiRouhs?tab=repositories)
+
+* [Spanish](https://github.com/ruby-processing/JRubyArt/wiki/%23ES--0.-Tutorial-en-espa%C3%B1ol)
+
+* [French](https://github.com/ruby-processing/JRubyArt/wiki/%23FR-0.-Tutoriel-en-fran%C3%A7ais)
+
 [free-sw]: http://www.fsf.org/licensing/essays/free-sw.html
 [issues]: https://github.com/ruby-processing/JRubyArt/issues
 [gist]: https://gist.github.com/
