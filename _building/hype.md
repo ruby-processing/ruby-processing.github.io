@@ -7,6 +7,8 @@ title:  "Building hype library"
 mkdir hype_processing
 cd hype_processing
 wget https://github.com/hype/HYPE_Processing/blob/master/distribution/HYPE.zip
+
+or otherwise download HYPE.zip
 unzip HYPE.zip
 
 cd ../../
