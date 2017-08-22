@@ -24,7 +24,7 @@ This file tells maven to do a polyglot-ruby build
   <extension>
     <groupId>io.takari.polyglot</groupId>
     <artifactId>polyglot-ruby</artifactId>
-    <version>0.1.19</version>
+    <version>0.2.0</version>
   </extension>
 </extensions>
 ```
@@ -58,13 +58,19 @@ project 'hype' do
   'maven.compiler.target' => '1.8',
   'polyglot.dump.pom' => 'pom.xml' )
 
-  jar 'processing.org:core:3.2.3' # latest available from maven central
+  jar 'org.processing:core:3.3.5' # latest available from maven
+  build do
+    default_goal 'package'
+    source_directory 'src'
+    final_name 'hype'
+  end
 end
+
 ```
-Ideally you need apache-maven-3.3.9 installed (at least 3.3.1), to compile with
+Ideally you need apache-maven-3.5.0 installed (at least 3.3.1), to compile with
 
 ```bash
-mvn package # outputs into target folder
+mvn package # outputs hype.jar into target folder
 ```
 
 For JRubyArt wrap `hype.jar` in `library` folder, put `library` folder in a `hype` folder (and put that alondside regular processing libraries in `sketchbook/libraries` linux etc).  For propane put nested hype library in `~/.propane/libraries folder` see how to install [contributed][contributed] libraries for propane.
