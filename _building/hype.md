@@ -77,4 +77,4 @@ mvn package # outputs hype.jar into target folder
 
 For JRubyArt wrap `hype.jar` in `library` folder, put `library` folder in a `hype` folder (and put that alondside regular processing libraries in `sketchbook/libraries` linux etc).  For propane put nested hype library in `~/.propane/libraries folder` see how to install [contributed][contributed] libraries for propane.
 
-[contributed]:https://ruby-processing.github.io/propane/contributed/
+[contributed]:https://ruby-processing.github.io/propane/contributed
