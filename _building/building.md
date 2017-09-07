@@ -4,7 +4,7 @@ title:  "Building ruby-processing projects"
 ---
 ### Tools of the Trade ###
 
-You will need to install jdk8, maven (apache-maven-3.5), jruby-9.1.12.0+, have access to processing-3.3.6 jars.  Note we prefer a local install of [minitest][minitest] for testing.
+You will need to install jdk8, maven (apache-maven-3.5), jruby-9.1.13.0+, have access to processing-3.3.6 jars.  Note we prefer a local install of [minitest][minitest] for testing.
 
 ### How to build ruby-processing projects ###
 Install the processing core jar in your local [maven repository][local], unfortunately you will need to do this until the processing guys (mainly Ben Fry) see the light and convert vanilla processing to use a maven build. Do this for any other jars you require that are not available from maven central.
