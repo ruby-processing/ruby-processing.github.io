@@ -26,7 +26,7 @@ This file tells maven to do a polyglot-ruby build
   <extension>
     <groupId>io.takari.polyglot</groupId>
     <artifactId>polyglot-ruby</artifactId>
-    <version>0.2.0</version>
+    <version>0.3.0</version>
   </extension>
 </extensions>
 ```
@@ -46,21 +46,25 @@ project 'hype' do
 
   organization 'hypeframework', 'http://www.hypeframework.org/'
 
-  [ 'Joshua Davis', 'James Cruz', 'Benjamin Fox', 'Christopher Tino'].each do |name|
-    developer name do
-      name name
+
+  {
+    'hype' => 'Joshua Davis', 'ghostery' => 'Christopher Tino'
+  }.each do |key, value|
+    developer key do
+      name value
       roles 'developer'
     end
   end
 
   license 'BSD 3', 'https://opensource.org/licenses/BSD-3-Clause'
+  issue_management 'https://github.com/hype/HYPE_Processing/issues', 'Github'
 
   properties( 'maven.compiler.source' => '1.8',
   'project.build.sourceEncoding' => 'UTF-8',
   'maven.compiler.target' => '1.8',
   'polyglot.dump.pom' => 'pom.xml' )
 
-  jar 'org.processing:core:3.3.5' # latest available from maven
+  jar 'org.processing:core:3.3.7' # latest available from maven
   build do
     default_goal 'package'
     source_directory 'src'
