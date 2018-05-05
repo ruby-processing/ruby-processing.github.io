@@ -1,22 +1,22 @@
 ---
 layout: page
-title: "Propane"
-keywords: propane, JRubyArt
+title: "PiCrate"
+keywords: picrate, JRubyArt
 ---
 
-## Understanding A propane Sketch ##
+## Understanding A picrate Sketch ##
 
-How you might write a propane sketch, including the `shebang` makes it easier to run the sketch using `script` in the `atom` editor, but assumes you have jruby available at `/usr/bin/jruby` or more likely via symbolic link (yet another reason not to use `rvm` or `rbenv` since they futz with your environment).
+How you might write a picrate sketch, including the `shebang` makes it easier to run the sketch using `script` in the `atom` editor, but assumes you have jruby available at `/usr/bin/jruby` or more likely via symbolic link (yet another reason not to use `rvm` or `rbenv` since they futz with your environment).
 
 ### my_sketch.rb ###
 
 ```ruby
 #!/usr/bin/env jruby
 # frozen_string_literal: false
-require 'propane'
+require 'picrate'
 
-class MyApp < Propane::App
-  # load_library :my_library # propane method
+class MyApp < Processing::App
+  # load_library :my_library # picrate method
   # include_package 'org.package' # JRuby method
   def settings
     size 200, 200 # size 'mode' or fullscreen 'mode' goes here
@@ -28,7 +28,7 @@ class MyApp < Propane::App
   end
 
   def setup
-    sketch_title 'Regular Propane Sketch' # propane method
+    sketch_title 'Regular PiCrate Sketch' # picrate method
   end
 
   def draw
@@ -45,12 +45,12 @@ You will see that under the hood the structure is like a [jruby_art][jruby_art] 
 
 ```ruby
 # frozen_string_literal: false
-require 'propane'
-module Propane
+require 'picrate'
+module Processing
   # include_package 'org.package' # JRuby method
   class MyApp < App # App is a subclass of processing.core.PApplet
 
-    # load_library :my_library # propane method
+    # load_library :my_library # picrate method
 
     def settings
       size 200, 200 # size 'mode' go here
@@ -58,7 +58,7 @@ module Propane
     end
 
     def setup
-      sketch_title 'Bare Sketch' # propane method
+      sketch_title 'Bare Sketch' # picrate method
     end
 
     def draw
@@ -67,10 +67,10 @@ module Propane
   end  
 end
 
-# NB: If you use this explicit form need to use Propane::MyApp.new to run sketch
+# NB: If you use this explicit form need to use PiCrate::MyApp.new to run sketch
 ```
 
-See more at [propane github pages][github_pages]
+See more at [picrate github pages][github_pages]
 
-[github_pages]:https://ruby-processing.github.io/propane/
+[github_pages]:https://ruby-processing.github.io/picrate/
 [jruby_art]:{{ site.github.url }}/projects/jruby_art/
