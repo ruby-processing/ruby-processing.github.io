@@ -72,5 +72,5 @@ end
 
 See more at [picrate github pages][github_pages]
 
-[github_pages]:https://ruby-processing.github.io/picrate/
+[github_pages]:https://ruby-processing.github.io/PiCrate/
 [jruby_art]:{{ site.github.url }}/projects/jruby_art/
