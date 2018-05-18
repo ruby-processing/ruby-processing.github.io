@@ -12,6 +12,10 @@ The natural successor to ruby-processing, for processing-3.3.7 and jruby-9.1.16.
 
 An alternative ruby-processing implementation, for processing-3.3.7 and jruby-9.1.16.0, does not require vanilla processing install, does require jruby install. Executable `jruby`.  Should be be easier to convert into an exportable app, no reliance on vanilla processing install. Only supports class wrapped sketches.
 
+### PiCrate ###
+
+An experimental ruby-processing implementation, for processing-3.3.7 and jruby-9.1.16.0, targeting linux and the raspberrypi. Executable `jruby`. Should be be easier to convert into an exportable app, no reliance on vanilla processing install. Only supports class wrapped sketches.
+
 ### pbox2d ###
 
 Gem wrapper around [jbox2d][pbox2d] for JRubyArt and propane
