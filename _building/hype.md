@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Building hype library"
+title: Building hype library
 ---
 
 ```bash
@@ -17,7 +17,8 @@ touch .mvn/extensions.xml # see below
 touch pom.rb # see below
 ```
 
-### extensions.xml ###
+# extensions.xml
+
 This file tells maven to do a polyglot-ruby build
 
 ```xml
@@ -31,7 +32,7 @@ This file tells maven to do a polyglot-ruby build
 </extensions>
 ```
 
-### pom.rb ###
+# pom.rb
 
 This is the ruby polyglot version of `pom.xml`
 
@@ -71,14 +72,14 @@ project 'hype' do
     final_name 'hype'
   end
 end
-
 ```
+
 Ideally you need apache-maven-3.5.0 installed (at least 3.3.1), to compile with
 
 ```bash
 mvn package # outputs hype.jar into target folder
 ```
 
-For JRubyArt wrap `hype.jar` in `library` folder, put `library` folder in a `hype` folder (and put that alondside regular processing libraries in `sketchbook/libraries` linux etc).  For propane put nested hype library in `~/.propane/libraries folder` see how to install [contributed][contributed] libraries for propane.
+For JRubyArt wrap `hype.jar` in `library` folder, put `library` folder in a `hype` folder (and put that alondside regular processing libraries in `sketchbook/libraries` linux etc). For propane put nested hype library in `~/.propane/libraries folder` see how to install [contributed] libraries for propane.
 
-[contributed]:https://ruby-processing.github.io/propane/contributed
+[contributed]: https://ruby-processing.github.io/propane/contributed
