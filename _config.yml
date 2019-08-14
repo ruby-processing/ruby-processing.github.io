@@ -25,7 +25,7 @@ collections:
   building:
     output: true
     permalink: /building/:path/
-  building:
+  jdk12:
     output: true
     permalink: /jdk12/:path/
 syntax-highlighting:
