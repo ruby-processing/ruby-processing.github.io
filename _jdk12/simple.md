@@ -1,3 +1,8 @@
+---
+layout: page
+title: JAVA2D Sketch
+---
+
 # Java2D sketch warnings with jdk12, JRuby-9.2.8.0 and JRubyArt-2.2.0
 
 ## sketch
