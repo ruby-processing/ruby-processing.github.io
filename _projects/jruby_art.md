@@ -77,7 +77,7 @@ end
 
 ## class_sketch.rb
 
-An explicitly class wrapped sketch can actually be run directly with `jruby`, but you should prefer [propane][propane] for that. Another reason to favour [propane][propane] is the `glsl` sketch worked before processing-3.3.7 and hasn't worked since (reverted to earlier versions of PGraphicsOpenGL.java and PShapeOpenGL.java in propane).
+An explicitly class wrapped sketch can actually be run directly with `jruby`, but you should prefer [propane][propane] for that. Another reason to favour [propane][propane] is if the `glsl` sketch worked before processing-3.3.7 and hasn't worked since (PGraphicsOpenGL.java and PShapeOpenGL.java were reverted to earlier versions of in propane).
 
 ```ruby
 # frozen_string_literal: false
