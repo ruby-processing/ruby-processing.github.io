@@ -1,21 +1,22 @@
 ---
 layout: page
-title: "JRubyArt"
-keywords: propane, JRubyArt
+title: JRubyArt
+keywords: 'propane, JRubyArt'
 ---
 
-## Understanding A JRubyArt Sketch ##
+# Understanding A JRubyArt Sketch
 
 Ruby-processing and now JRubyArt have both taken advantage of ruby language features to create a `DSL` like experience when coding processing in ruby, to the extent that
 
 ```ruby
 background 0
 ```
+
 is a valid sketch (ie you can write `static` sketches in ruby). Like vanilla processing we wrap this code before it is run but unlike vanilla processing we don't use a preprocessor.
 
 What you can/should write (like a vanilla processing sketch) avoids much boilerplate.
 
-### bare.rb ###
+## bare.rb
 
 ```ruby
 # load_library :my_library # jruby_art method
@@ -74,8 +75,9 @@ module Processing
 end
 ```
 
-### class_sketch.rb
-An explicitly class wrapped sketch can actually be run directly with `jruby`, but you should prefer [propane][propane] for that.
+## class_sketch.rb
+
+An explicitly class wrapped sketch can actually be run directly with `jruby`, but you should prefer [propane][propane] for that. Another reason to favour [propane][propane] is the `glsl` sketch worked before processing-3.3.7 and hasn't worked since (reverted to earlier versions of PGraphicsOpenGL.java and PShapeOpenGL.java in propane).
 
 ```ruby
 # frozen_string_literal: false
@@ -102,5 +104,6 @@ MySketch.new
 
 See more at [JRubyArt github pages][github_pages]
 
-[github_pages]:https://ruby-processing.github.io/JRubyArt/
 [propane]:{{ site.github.url }}/projects/propane/
+
+[github_pages]: https://ruby-processing.github.io/JRubyArt/
