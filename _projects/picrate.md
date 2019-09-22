@@ -4,6 +4,16 @@ title: "PiCrate"
 keywords: picrate, JRubyArt
 ---
 
+## Environment ##
+
+### Java ###
+
+Unlike vanilla processing, we do not distribute a java environment with our projects. It is the expectation that you will use the default Oracle jdk8 on the RaspberryPI.
+
+### JRuby ###
+
+With picrate you need to install jruby on your system (you do not need `rvm` or `rbenv` to do this since you call the jruby binary directly).
+
 ## Understanding A picrate Sketch ##
 
 How you might write a picrate sketch, including the `shebang` makes it easier to run the sketch using `script` in the `atom` editor, but assumes you have jruby available at `/usr/bin/jruby` or more likely via symbolic link (yet another reason not to use `rvm` or `rbenv` since they futz with your environment).

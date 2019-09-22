@@ -1,8 +1,18 @@
 ---
 layout: page
 title: "Propane"
-keywords: propane, JRubyArt
+keywords: propane, propane
 ---
+
+## Environment ##
+
+### Java ###
+
+Unlike vanilla processing, we do not distribute a java environment with our projects. It is quite possible that Oracle jdk8 will work best with propane 1.6.0 and below, and Oracle jdk12 will work best with propane-2.2.0+ but they have not been tested. It seem that not all OpenJDK distributions are equal, if you are lucky the one installed on your system will work for you (jdk8 for propane-1.6.0 and jdk11+ for propane-2.2.0). If you have linker problems with opengl sketches we recommend you use [AdoptOpenJDK][adopt] binaries.
+
+### JRuby ###
+
+With propane you need to install jruby on your system (you do not need `rvm` or `rbenv` to do this since you call the jruby binary directly).
 
 ## Understanding A propane Sketch ##
 
@@ -74,3 +84,4 @@ See more at [propane github pages][github_pages]
 
 [github_pages]:https://ruby-processing.github.io/propane/
 [jruby_art]:{{ site.github.url }}/projects/jruby_art/
+[adopt]: https://adoptopenjdk.net/

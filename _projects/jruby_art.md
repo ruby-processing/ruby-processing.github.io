@@ -4,7 +4,18 @@ title: JRubyArt
 keywords: 'propane, JRubyArt'
 ---
 
-# Understanding A JRubyArt Sketch
+## Environment
+
+### Java
+
+Unlike vanilla processing, we do not distribute a java environment with our projects. It is quite possible that Oracle jdk8 will work best with JRubyArt 1.6.0 and below, and Oracle jdk12 will work best with JRubyArt-2.2.0+ but they have not been tested. It seem that not all OpenJDK distributions are equal, if you are lucky the one installed on your system will work for you (jdk8 for JRubyArt-1.6.0 and jdk11+ for JRubyArt-2.2.0). If you have linker problems with opengl sketches we recommend you use [AdoptOpenJDK][adopt] binaries.
+
+### JRuby
+
+With JRubyArt, there is the possibility of installing jruby-complete (using k9 --install), rather than install jruby on your system, you will need a vanilla ruby install and to configure `~/.jruby_art/config.yml` to run sketches. Otherwise install jruby (you do not need rvm or rbenv to this as jruby binary gets called directly).
+
+
+## Understanding A JRubyArt Sketch
 
 Ruby-processing and now JRubyArt have both taken advantage of ruby language features to create a `DSL` like experience when coding processing in ruby, to the extent that
 
@@ -16,7 +27,7 @@ is a valid sketch (ie you can write `static` sketches in ruby). Like vanilla pro
 
 What you can/should write (like a vanilla processing sketch) avoids much boilerplate.
 
-## bare.rb
+### bare.rb
 
 ```ruby
 # load_library :my_library # jruby_art method
@@ -75,7 +86,7 @@ module Processing
 end
 ```
 
-## class_sketch.rb
+### class_sketch.rb
 
 An explicitly class wrapped sketch can actually be run directly with `jruby`, but you should prefer [propane][propane] for that. Another reason to favour [propane][propane] is if the `glsl` sketch worked before processing-3.3.7 and hasn't worked since (PGraphicsOpenGL.java and PShapeOpenGL.java were reverted to earlier versions of in propane).
 
@@ -107,3 +118,5 @@ See more at [JRubyArt github pages][github_pages]
 [propane]:{{ site.github.url }}/projects/propane/
 
 [github_pages]: https://ruby-processing.github.io/JRubyArt/
+
+[adopt]: https://adoptopenjdk.net/
