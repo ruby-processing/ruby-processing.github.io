@@ -12,7 +12,7 @@ There are three main projects [JRubyArt][jruby_art], [PiCrate] and [propane], [J
 
 [Propane] is a configuration free, complete version of ruby-processing (_does not require installed vanilla processing_) that depends on an installed jruby (_is slightly more experimental however since a modified PApplet is required with jdk9+ propane may take over in future_). Since propane-3.2.0, propane is compiled with jdk11, and thus jdk11 is a requirement.
 
-[PiCrate] is a standalone version designed for the [RaspberryPI][rpi], but can be developed and run 64 bit linux.
+[PiCrate] is a standalone version targetting the [RaspberryPI][rpi], but it can be developed and run 64 bit linux.
 
 Other projects include the pbox2d gem (a gem wrapper around [jbox2d]), toxiclibs gem (a gem wrapper around [toxiclibs]) and geomerative gem (a gem wrapper around [geomerative]).
 
