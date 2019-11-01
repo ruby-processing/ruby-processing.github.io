@@ -1,7 +1,7 @@
 ---
 layout: page
 title: JRubyArt
-permalink: /JRubyArt/
+permalink: /jruby/JRubyArt/
 ---
 
 # Recommended Setup For JRubyArt
