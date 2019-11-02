@@ -4,7 +4,7 @@ title: JRubyArt
 permalink: /jruby/JRubyArt/
 ---
 
-# Recommended Setup For JRubyArt
+# Recommended JRuby Install For JRubyArt
 
 The preferred JRubyArt setup requires that you do a system install of JRuby. You should install java before attempting to install JRuby.
 
