@@ -28,6 +28,9 @@ collections:
   java:
     output: true
     permalink: /java/:path/
+  jruby:
+    output: true
+    permalink: /jruby/:path/
 syntax-highlighting:
   enabled: true
   css: syntax.css
