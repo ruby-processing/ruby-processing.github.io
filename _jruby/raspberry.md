@@ -68,4 +68,4 @@ echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk >> ~/.profile"
 
 Above assumes you are using `java-8-openjdk` on Buster, adjust for your setup. We do not currently recommend using `java-11-openjdk`, but if you are there is even more reason to install the `jruby-launcher` gem as it suppresses illegal-reflective access warning from `JRuby` (but not from the jogl jars)
 
-[download](https://www.jruby.org/download)
+[download]: https://www.jruby.org/download
