@@ -33,14 +33,6 @@ This is just another possibility but untested with ruby-processing projects.
 
 [Link](https://www.azul.com/get-openjdk-support/)
 
-### Installing jruby-launcher
 
-It is recommended that you install the jruby-launcher (for optimised performance and suppression of illegal reflective access by jruby warning).
-
-You should set the `JAVA_HOME` environmental variable before installing gem, and use JRuby version you want to use with PiCrate (preferably latest available).
-
-```bash
-sudo jgem install jruby-launcher
-```
 
 The illegal reflective access warnings warnings re-jogl remain.
