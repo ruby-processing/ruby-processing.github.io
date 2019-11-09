@@ -62,8 +62,9 @@ You need to do this to use gem executables.
 First set the `JAVA_HOME` environmental variable, you can do this by editing the `~/.profile` file:-
 
 ```bash
-source ~/.profile # to use the edited ~/.profile in current shell
 echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk >> ~/.profile"
+source ~/.profile # to use the edited ~/.profile in current shell
+sudo jgem install jruby-launcher # NB: you do need sudo access here
 ```
 
 Above assumes you are using `java-8-openjdk` on Buster, adjust for your setup. We do not currently recommend using `java-11-openjdk`, but if you are there is even more reason to install the `jruby-launcher` gem as it suppresses illegal-reflective access warning from `JRuby` (but not from the jogl jars)
