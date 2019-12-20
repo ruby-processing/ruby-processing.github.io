@@ -27,7 +27,7 @@ This file tells maven to do a polyglot-ruby build
   <extension>
     <groupId>io.takari.polyglot</groupId>
     <artifactId>polyglot-ruby</artifactId>
-    <version>0.3.0</version>
+    <version>0.4.3</version>
   </extension>
 </extensions>
 ```
