@@ -5,7 +5,7 @@ title: Building ruby-processing projects
 
 # Tools of the Trade
 
-You will need to install jdk12, maven (apache-maven-3.5+), jruby-9.2.9.0+, and have access to processing jogl jars. Note we prefer a local install of [minitest][minitest] for testing.
+You will need to install jdk12, maven (apache-maven-3.5+), jruby-9.2.11.0+, and have access to processing jogl jars. Note we prefer a local install of [minitest][minitest] for testing.
 
 # How to build ruby-processing projects
 

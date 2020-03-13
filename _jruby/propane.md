@@ -22,7 +22,6 @@ echo "export JAVA_HOME=/opt/jdk13 >> ~/.profile" # wherever
 then
 ```bash
 source ~/.profile # to use the edited ~/.profile in current shell
-sudo jgem install jruby-launcher # NB: you do need sudo access here
 ```
 
 ## Other linux
@@ -35,7 +34,6 @@ echo "export JAVA_HOME=/opt/jdk13 >> ~/.bashrc" # wherever
 then
 ```bash
 source ~/.bashrc # to use the edited ~/.bashrc in current shell
-sudo jgem install jruby-launcher # NB: you do need sudo access here
 ```
 
 [java]:{{ site.github.url }}/java/JRubyArt_propane

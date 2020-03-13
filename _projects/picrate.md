@@ -8,7 +8,7 @@ keywords: picrate, JRubyArt
 
 ### Java ###
 
-Unlike vanilla processing, we do not distribute a java environment with our projects. It is the expectation that you will use the default Oracle jdk8 on the RaspberryPI.
+Unlike vanilla processing, we do not distribute a java environment with our projects. It is the expectation that you will use the default openjdk11 suplied with Buster on the RaspberryPI3B+ or RaspberryPI4.
 
 ### JRuby ###
 

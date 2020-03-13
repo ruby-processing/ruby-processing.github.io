@@ -35,4 +35,4 @@ This is just another possibility but untested with ruby-processing projects.
 
 
 
-The illegal reflective access warnings warnings re-jogl remain.
+The illegal reflective access warnings warnings re-jogl can be suppressed, but will disappear with jogl-2.4.0.
