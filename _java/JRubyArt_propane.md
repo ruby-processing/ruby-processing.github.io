@@ -9,9 +9,14 @@ Prior to jdk9 there were no specific recommendations, linux user probably used v
 
 ## Stock OpenJDK on linux
 
-Currently, doesn't work with OpenGL (missing linker?).
+May not work with OpenGL (missing linker?). Diagnostic error message:-
 
-## AdoptOpenJDK
+```bash
+ld.so: dl-lookup.c: 111: check_match: Assertion `version->filename == NULL || ! _dl_name_match_p (version->filename, map)'
+
+```
+
+## AdoptOpenJDK (Recommended version 12+)
 
 The development version of vanilla processing is using this version and I think it is a good choice, however to confuse matters it comes in several flavours. Vanilla processing is using the variant with a `hotspot` jvm, which is a good starting point. The ruby-processing group will be pleased to hear about anyone experimenting with the `OpenJ9` jvm.
 
@@ -27,12 +32,8 @@ The development version of vanilla processing is using this version and I think 
 
 [Windows 64](https://adoptopenjdk.net/installation.html#x64_win-jdk)
 
-### Azul OpenJDK
+### OpenJ9 jdk12+
 
-This is just another possibility but untested with ruby-processing projects.
+Is an excellent alternative (jdk14 version has been tested on linux)
 
-[Link](https://www.azul.com/get-openjdk-support/)
-
-
-
-The illegal reflective access warnings warnings re-jogl can be suppressed, but will disappear with jogl-2.4.0.
+Use the latest versions of PiCrate, propane and JRubyArt to avoid reflective access warnings (you may need to define JAVA_HOME to get rid off the JRuby warnings).

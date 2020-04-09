@@ -8,18 +8,18 @@ permalink: /jruby/raspberry
 
 ## Download
 
-Download the latest JRuby release [here][download]. You could use `wget` (substituting latest version for for `9.2.11.0`):-
+Download the latest JRuby release [here][download]. You could use `wget` (substituting latest version for for `9.2.11.1`):-
 
-`wget https://repo1.maven.org/maven2/org/jruby/jruby-dist/9.2.11.0/jruby-dist-9.2.11.0-bin.tar.gz`
+`wget https://repo1.maven.org/maven2/org/jruby/jruby-dist/9.2.11.1/jruby-dist-9.2.11.1-bin.tar.gz`
 
 ## Install
 
 ```bash
 cd /opt
-sudo tar xzvf ~/jruby-dist-9.2.11.0-bin.tar.gz # or ~/Downloads/...
-sudo update-alternatives --install /usr/bin/jruby jruby /opt/jruby-9.2.11.0/bin/jruby 100
-sudo update-alternatives --install /usr/bin/jgem jgem /opt/jruby-9.2.11.0/bin/jgem 100
-sudo update-alternatives --install /usr/bin/jirb jirb /opt/jruby-9.2.11.0/bin/jirb 100
+sudo tar xzvf ~/jruby-dist-9.2.11.1-bin.tar.gz # or ~/Downloads/...
+sudo update-alternatives --install /usr/bin/jruby jruby /opt/jruby-9.2.11.1/bin/jruby 100
+sudo update-alternatives --install /usr/bin/jgem jgem /opt/jruby-9.2.11.1/bin/jgem 100
+sudo update-alternatives --install /usr/bin/jirb jirb /opt/jruby-9.2.11.1/bin/jirb 100
 ```
 
 ## Update
@@ -56,17 +56,5 @@ echo "export PATH=\"\${PATH}:\${GEM_PATH}/bin\"" >> ~/.profile
 ```
 
 You need to do this to use gem executables.
-
-## Installing/Updating jruby-launcher gem
-
-First set the `JAVA_HOME` environmental variable, you can do this by editing the `~/.profile` file:-
-
-```bash
-echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk >> ~/.profile"
-source ~/.profile # to use the edited ~/.profile in current shell
-sudo jgem install jruby-launcher # NB: you do need sudo access here
-```
-
-Above assumes you are using `java-8-openjdk` on Buster, adjust for your setup. We do not currently recommend using `java-11-openjdk`, but if you are there is even more reason to install the `jruby-launcher` gem as it suppresses illegal-reflective access warning from `JRuby` (but not from the jogl jars)
 
 [download]: https://www.jruby.org/download
