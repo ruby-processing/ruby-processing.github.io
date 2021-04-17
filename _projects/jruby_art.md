@@ -8,11 +8,11 @@ keywords: 'propane, JRubyArt'
 
 ### Java
 
-We strongly recommend you use [AdoptOpenJDK][adopt] binaries.
+If you run in to trouble use [AdoptOpenJDK][adopt] binaries, there eas once an issue with OpenGL with some JDKs but that seems to have been resolved.
 
 ### JRuby
 
-With JRubyArt, there is the possibility of installing jruby-complete (using k9 --install), rather than install jruby on your system, you will need a vanilla ruby install and to configure `~/.jruby_art/config.yml` to run sketches. Otherwise install jruby (you do not need rvm or rbenv to this as jruby binary gets called directly).
+With JRubyArt, there was the possibility of installing jruby-complete (using k9 --install), rather than install jruby on your system, you will need a vanilla ruby install (but current MRI ruby may have compatability issues) and to configure `~/.jruby_art/config.yml` to run sketches. Otherwise install jruby (you do not need rvm or rbenv to this as jruby binary gets called directly).
 
 
 ## Understanding A JRubyArt Sketch
@@ -79,7 +79,7 @@ module Processing
 
     def draw
       # draw loop
-    end    
+    end
     # end bare sketch ###########################################
   end
   Sketch.new
@@ -88,7 +88,7 @@ end
 
 ### class_sketch.rb
 
-An explicitly class wrapped sketch can actually be run directly with `jruby`, but you should prefer [propane][propane] for that.
+An explicitly class wrapped sketch can actually be run directly with `jruby`, but you should prefer [propane][propane] or PiCrate for that.
 
 ```ruby
 # frozen_string_literal: false

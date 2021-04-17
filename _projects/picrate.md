@@ -8,15 +8,15 @@ keywords: picrate, JRubyArt
 
 ### Java ###
 
-Unlike vanilla processing, we do not distribute a java environment with our projects. It is the expectation that you will use the default openjdk11 suplied with Buster on the RaspberryPI3B+ or RaspberryPI4.
+Unlike vanilla processing, we do not distribute a java environment with our projects. It is the expectation that you will use the default openjdk11 suplied with RaspberryPI OS or Manjarao ARM on the RaspberryPI3B+ or RaspberryPI4.
 
 ### JRuby ###
 
-With picrate you need to install jruby on your system (you do not need `rvm` or `rbenv` to do this since you call the jruby binary directly).
+With picrate you need to install jruby on your system (you do not need `rvm` or `rbenv` to do this since you call the jruby binary directly). On Manjaro ARM you can use pacman to do this.
 
 ## Understanding A picrate Sketch ##
 
-How you might write a picrate sketch, including the `shebang` makes it easier to run the sketch using `script` in the `atom` editor, but assumes you have jruby available at `/usr/bin/jruby` or more likely via symbolic link (yet another reason not to use `rvm` or `rbenv` since they futz with your environment).
+How you might write a picrate sketch, including the `shebang` which makes it easier to run the sketch using `script` in the `atom` editor, but assumes you have jruby available at `/usr/bin/jruby` or more likely via symbolic link (yet another reason not to use `rvm` or `rbenv` since they futz with your environment). However you will likely use geany or vim on your RaspberryPI (atom is not available).
 
 ### my_sketch.rb ###
 
@@ -73,8 +73,8 @@ module Processing
 
     def draw
       # draw loop
-    end    
-  end  
+    end
+  end
 end
 
 # NB: If you use this explicit form need to use PiCrate::MyApp.new to run sketch

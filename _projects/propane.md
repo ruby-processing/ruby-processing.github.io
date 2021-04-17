@@ -8,7 +8,7 @@ keywords: propane, propane
 
 ### Java ###
 
-We recommend you use [AdoptOpenJDK][adopt] binaries.
+Most openjdks 11+ will now probably work. We recommend you try [AdoptOpenJDK][adopt] binaries if you run into problems.
 
 ### JRuby ###
 
@@ -73,8 +73,8 @@ module Propane
 
     def draw
       # draw loop
-    end    
-  end  
+    end
+  end
 end
 
 # NB: If you use this explicit form need to use Propane::MyApp.new to run sketch
