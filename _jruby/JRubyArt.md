@@ -6,7 +6,7 @@ permalink: /jruby/JRubyArt/
 
 # Recommended JRuby Install For JRubyArt
 
-The preferred JRubyArt setup requires that you do a system install of JRuby. You should install java before attempting to install JRuby. Install at least version 9.2.11.1.
+The preferred JRubyArt setup requires that you do a system install of JRuby. You should install java before attempting to install JRuby. Install at least version 9.3.0.0.
 
 # Alternative Setup For JRubyArt
 

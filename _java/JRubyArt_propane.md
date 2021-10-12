@@ -16,7 +16,7 @@ ld.so: dl-lookup.c: 111: check_match: Assertion `version->filename == NULL || ! 
 
 ```
 
-## AdoptOpenJDK (Recommended version 12+)
+## OpenJDK (Recommended version 11+)
 
 The development version of vanilla processing is using this version and I think it is a good choice, however to confuse matters it comes in several flavours. Vanilla processing is using the variant with a `hotspot` jvm, which is a good starting point. The ruby-processing group will be pleased to hear about anyone experimenting with the `OpenJ9` jvm.
 
@@ -34,6 +34,6 @@ The development version of vanilla processing is using this version and I think 
 
 ### OpenJ9 jdk12+
 
-Is an excellent alternative (jdk14 version has been tested on linux)
+Is an excellent alternative (jdk16 version has been tested on linux)
 
 Use the latest versions of PiCrate, propane and JRubyArt to avoid reflective access warnings (you may need to define JAVA_HOME to get rid off the JRuby warnings).

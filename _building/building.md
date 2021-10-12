@@ -5,11 +5,11 @@ title: Building ruby-processing projects
 
 # Tools of the Trade
 
-You will need to install jdk12, maven (apache-maven-3.5+), jruby-9.2.11.0+, and have access to processing jogl jars. Note we prefer a local install of [minitest][minitest] for testing.
+You will need to install jdk11+, maven (apache-maven-3.8.3+), jruby-9.3.0.0+, and have access to processing jogl jars. Note we prefer a local install of [minitest][minitest] for testing.
 
 # How to build ruby-processing projects
 
-Install the processing so you can access the processing hacked jogl jars, unfortunately you will need to do this until the processing guys (mainly Ben Fry) see the light and convert vanilla processing to use a maven build. Do this for any other jars you require that are not available from maven central.
+You will need to get the latest version of JOGL (currently JOGL-2.4 as a release candidate)
 
 ```bash
 git clone repo
