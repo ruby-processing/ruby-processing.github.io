@@ -9,14 +9,9 @@ Prior to jdk9 there were no specific recommendations, linux user probably used v
 
 ## Stock OpenJDK on linux
 
-May not work with OpenGL (missing linker?). Diagnostic error message:-
+Require at least OpenJDK-11, prefer OpenJDK-17
 
-```bash
-ld.so: dl-lookup.c: 111: check_match: Assertion `version->filename == NULL || ! _dl_name_match_p (version->filename, map)'
-
-```
-
-## OpenJDK (Recommended version 11+)
+## OpenJDK (Recommended version 17+)
 
 The development version of vanilla processing is using this version and I think it is a good choice, however to confuse matters it comes in several flavours. Vanilla processing is using the variant with a `hotspot` jvm, which is a good starting point. The ruby-processing group will be pleased to hear about anyone experimenting with the `OpenJ9` jvm.
 
@@ -32,8 +27,8 @@ The development version of vanilla processing is using this version and I think 
 
 [Windows 64](https://adoptopenjdk.net/installation.html#x64_win-jdk)
 
-### OpenJ9 jdk12+
+### OpenJ9 jdk17+
 
-Is an excellent alternative (jdk16 version has been tested on linux)
+Is a possible alternative.
 
 Use the latest versions of PiCrate, propane and JRubyArt to avoid reflective access warnings (you may need to define JAVA_HOME to get rid off the JRuby warnings).
