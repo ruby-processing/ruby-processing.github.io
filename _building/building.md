@@ -3,7 +3,7 @@ layout: page
 title: Developing / Building ruby-processing projects
 ---
 
-All projects can be built on 64 bit linux, including PiCrate for RaspberryPI. Failing that use Windows, Apple is close to useless for open source development, I would be glad if you could prove wrong...
+All projects can be built on 64 bit linux, including PiCrate for RaspberryPI. Failing that use Windows, Apple is close to useless for open source development, I would be glad if you could me prove wrong...
 
 I use [Netbeans][netbeans] when developing java components and [Atom][atom] for:-
 1. Developing ruby components (and creating and running sketches)
