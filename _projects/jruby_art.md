@@ -8,7 +8,7 @@ keywords: 'propane, JRubyArt'
 
 ### Java
 
-If you run in to trouble use [AdoptOpenJDK][adopt] binaries, there eas once an issue with OpenGL with some JDKs but that seems to have been resolved.
+If you run in to trouble use [AdoptOpenJDK][adopt] binaries, there was once an issue with OpenGL with some JDKs but that has been resolved.
 
 ### JRuby
 

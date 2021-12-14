@@ -8,7 +8,7 @@ keywords: propane, propane
 
 ### Java ###
 
-Most openjdks 11+ will now probably work. We recommend you try [AdoptOpenJDK][adopt] binaries if you run into problems.
+Soon moving to require OpenJDK-17 which should be preferred over OpneJDK-11, in any event.
 
 ### JRuby ###
 
