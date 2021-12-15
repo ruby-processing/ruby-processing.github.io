@@ -5,7 +5,7 @@ title: JRubyArt and propane
 
 # Recommended Setup For JRubyArt and propane
 
-Prior to jdk9 there were no specific recommendations, linux user probably used vanilla OpenJDK8 that was installed by there distribution, and Mac and Windows users probably installed Oracle jdk8\. The ruby-processing project wants to move forward, and it is a requirement that you install at least jdk11\. Oracle jdk is no longer an option for regular users, but unfortunately neither is a stock linux distribution of OpenJDK11+.
+Prior to jdk9 there were no specific recommendations, linux user probably used vanilla OpenJDK8 that was installed by there distribution, and Mac and Windows users probably installed Oracle jdk8\. The ruby-processing project wants to move forward, and it is a requirement that you install at least jdk11\. Oracle jdk is no longer an option for regular users.
 
 ## Stock OpenJDK on linux
 
